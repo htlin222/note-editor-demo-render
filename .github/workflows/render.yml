@@ -1,6 +1,7 @@
 # 平行分段渲染：畫面切成 N 段（各自 --muted），音軌另外依時間軸直接混，最後 concat + mux。
 # 素材（錄影 webm、旁白 mp3、sfx.wav）放在 release「assets」的 demo-assets.tar.zst，不進 git。
 name: render
+# 手動觸發：gh workflow run render.yml -f chunks=20
 
 on:
   workflow_dispatch:
