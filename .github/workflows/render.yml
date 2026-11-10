@@ -108,7 +108,7 @@ jobs:
           ffmpeg -nostdin -v error -f concat -safe 0 -i out/list.txt -i dl/full_audio.wav \
             -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -shortest -movflags +faststart \
             out/discharge-summary-demo.mp4
-          frames=$(ffprobe -v error -count_packets -select_streams v -show_entries stream=nb_read_packets -of csv=p=0 out/discharge-summary-demo.mp4)
+          frames=$(ffprobe -v error -count_packets -select_streams v -show_entries stream=nb_read_packets -of default=nw=1:nk=1 out/discharge-summary-demo.mp4 | tr -dc 0-9)
           want=$(node -p 'require("./narration/timeline.json").totalFrames')
           echo "frames=$frames want=$want"
           test "$frames" = "$want"
