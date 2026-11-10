@@ -59,7 +59,7 @@ jobs:
         run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-cjk fonts-dejavu-core zstd > /dev/null
       - run: pnpm install --frozen-lockfile
       - name: 下載素材
-        run: mkdir -p public out \&\& gh release download "${{ inputs.assets_tag }}" -p demo-assets.tar.zst -O - | zstd -d | tar -C public -xf -
+        run: mkdir -p public out && gh release download "${{ inputs.assets_tag }}" -p demo-assets.tar.zst -O - | zstd -d | tar -C public -xf -
         env:
           GH_TOKEN: ${{ github.token }}
       - run: npx remotion browser ensure
@@ -81,7 +81,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg zstd > /dev/null
       - name: 下載素材
-        run: mkdir -p public out \&\& gh release download "${{ inputs.assets_tag }}" -p demo-assets.tar.zst -O - | zstd -d | tar -C public -xf -
+        run: mkdir -p public out && gh release download "${{ inputs.assets_tag }}" -p demo-assets.tar.zst -O - | zstd -d | tar -C public -xf -
         env:
           GH_TOKEN: ${{ github.token }}
       - run: pip install -q numpy && python3 scripts/mix-audio.py out/full_audio.wav
