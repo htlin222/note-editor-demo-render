@@ -1,0 +1,3374 @@
+{
+	"fps": 30,
+	"scenes": [
+		{
+			"id": "intro",
+			"title": "開場",
+			"subtitle": "",
+			"chapter": null,
+			"stage": null,
+			"part": null,
+			"startSec": 0,
+			"endSec": 35.400000000000006,
+			"sentences": [
+				{
+					"text": "歡迎來到臨床，這部影片教你寫入院與出院病摘。",
+					"file": "audio/intro_00_d0f2aa5f.mp3",
+					"startSec": 1.6,
+					"durSec": 6.408
+				},
+				{
+					"text": "病人入院時寫入院病摘，出院時寫出院病摘。",
+					"file": "audio/intro_01_0a683794.mp3",
+					"startSec": 8.408000000000001,
+					"durSec": 6.048
+				},
+				{
+					"text": "不管寫哪一份，都照同一個順序。",
+					"file": "audio/intro_02_33f0f02c.mp3",
+					"startSec": 14.856000000000002,
+					"durSec": 4.272
+				},
+				{
+					"text": "選人、選事項、看資料、帶入、修改，",
+					"file": "audio/intro_03_be3851a0.mp3",
+					"startSec": 19.528000000000002,
+					"durSec": 5.064
+				},
+				{
+					"text": "然後一項一項完成，最後存檔送簽。",
+					"file": "audio/intro_04_ad27b2b9.mp3",
+					"startSec": 24.992000000000004,
+					"durSec": 4.848
+				},
+				{
+					"text": "跟著做一遍，第一天就能上手。",
+					"file": "audio/intro_05_d61be311.mp3",
+					"startSec": 30.240000000000006,
+					"durSec": 3.96
+				}
+			]
+		},
+		{
+			"id": "quick_adm",
+			"title": "快速上手：入院病摘",
+			"subtitle": "先用幾分鐘走完整個流程，細節後面逐章講",
+			"chapter": 1,
+			"stage": null,
+			"part": null,
+			"startSec": 35.400000000000006,
+			"endSec": 119.60800000000002,
+			"sentences": [
+				{
+					"text": "先花幾分鐘，把整個流程走一遍。",
+					"card": {
+						"kind": "tip",
+						"title": "快速上手",
+						"body": "先看全貌，細節後面各章再講"
+					},
+					"file": "audio/quick_adm_00_c049c8e3.mp3",
+					"startSec": 37.800000000000004,
+					"durSec": 4.368
+				},
+				{
+					"text": "從 HIS 點進來，病人就已經選好。",
+					"card": {
+						"kind": "step",
+						"title": "選人",
+						"body": "先確認左上角的姓名與病歷號"
+					},
+					"file": "audio/quick_adm_01_85104b3c.mp3",
+					"startSec": 42.568000000000005,
+					"durSec": 4.224
+				},
+				{
+					"text": "要換病人，按右上角的切換病人。",
+					"file": "audio/quick_adm_02_781bfb5a.mp3",
+					"startSec": 47.19200000000001,
+					"durSec": 4.344
+				},
+				{
+					"text": "上方選這次住院，確認日期對不對。",
+					"card": {
+						"kind": "step",
+						"title": "事項",
+						"body": "選對住院事件再開始寫"
+					},
+					"file": "audio/quick_adm_03_4975f828.mp3",
+					"startSec": 51.93600000000001,
+					"durSec": 4.824
+				},
+				{
+					"text": "左邊寫病摘，右邊看歷次病摘與資料。",
+					"card": {
+						"kind": "step",
+						"title": "看資料",
+						"body": "右欄可看過去病摘、檢驗與報告"
+					},
+					"file": "audio/quick_adm_04_62375e1f.mp3",
+					"startSec": 57.16000000000001,
+					"durSec": 5.088
+				},
+				{
+					"text": "入院病摘，先按自動帶入欄位。",
+					"card": {
+						"kind": "step",
+						"title": "帶入",
+						"body": "一鍵起草：規則帶入＋AI 改寫"
+					},
+					"file": "audio/quick_adm_05_783ee37a.mp3",
+					"startSec": 62.64800000000001,
+					"durSec": 4.344
+				},
+				{
+					"text": "確認視窗會列出要帶入的段落。",
+					"file": "audio/quick_adm_06_ea8cef2d.mp3",
+					"startSec": 67.39200000000001,
+					"durSec": 4.008
+				},
+				{
+					"text": "已有內容的段落會略過，不會被蓋掉。",
+					"card": {
+						"kind": "rule",
+						"title": "只填空白段落",
+						"body": "已經寫的內容不會被覆蓋"
+					},
+					"file": "audio/quick_adm_07_8ba8df4a.mp3",
+					"startSec": 71.80000000000001,
+					"durSec": 4.56
+				},
+				{
+					"text": "按確定帶入，等 AI 起草。",
+					"file": "audio/quick_adm_08_ab67c0d1.mp3",
+					"startSec": 76.76,
+					"durSec": 3.528
+				},
+				{
+					"text": "結果視窗會告訴你每段帶了什麼。",
+					"file": "audio/quick_adm_09_1f2f62ad.mp3",
+					"startSec": 80.688,
+					"durSec": 4.152
+				},
+				{
+					"text": "帶入的只是草稿，你要逐段核對。",
+					"card": {
+						"kind": "warn",
+						"title": "逐段核對",
+						"body": "AI 與帶入的內容都可能有錯"
+					},
+					"file": "audio/quick_adm_10_221c9cef.mp3",
+					"startSec": 85.24000000000001,
+					"durSec": 4.176
+				},
+				{
+					"text": "按知道了，回到編輯器。",
+					"file": "audio/quick_adm_11_58eaa50d.mp3",
+					"startSec": 89.816,
+					"durSec": 3.36
+				},
+				{
+					"text": "點段落頁籤，一段一段對照病歷修改。",
+					"card": {
+						"kind": "step",
+						"title": "修改・一項一項",
+						"body": "逐段核對，改成你確認過的事實"
+					},
+					"file": "audio/quick_adm_12_6514e07a.mp3",
+					"startSec": 93.57600000000001,
+					"durSec": 4.848
+				},
+				{
+					"text": "現在病史寫為什麼來、病程與這次目的。",
+					"card": {
+						"kind": "write",
+						"title": "現在病史",
+						"body": "入院原因、病程經過、這次入院目的"
+					},
+					"file": "audio/quick_adm_13_216e90f2.mp3",
+					"startSec": 98.82400000000001,
+					"durSec": 5.232
+				},
+				{
+					"text": "寫到一半先按暫存，之後還能改。",
+					"card": {
+						"kind": "rule",
+						"title": "暫存＝草稿",
+						"body": "不做檢查，之後可以再改"
+					},
+					"file": "audio/quick_adm_14_e08dd498.mp3",
+					"startSec": 104.45600000000002,
+					"durSec": 4.536
+				},
+				{
+					"text": "全部核對完，按正式儲存送簽。",
+					"card": {
+						"kind": "step",
+						"title": "CRUD",
+						"body": "正式儲存＝送給主治簽核"
+					},
+					"file": "audio/quick_adm_15_b94c5b27.mp3",
+					"startSec": 109.39200000000002,
+					"durSec": 4.368
+				},
+				{
+					"text": "主治簽核後就鎖定，不能再改。",
+					"card": {
+						"kind": "rule",
+						"title": "簽核後鎖定",
+						"body": "已簽只能由主治補充"
+					},
+					"file": "audio/quick_adm_16_62a98e35.mp3",
+					"startSec": 114.16000000000003,
+					"durSec": 4.248
+				}
+			]
+		},
+		{
+			"id": "quick_dis",
+			"title": "快速上手：出院病摘",
+			"subtitle": "同一套順序，再走一次出院",
+			"chapter": 2,
+			"stage": null,
+			"part": null,
+			"startSec": 119.60800000000002,
+			"endSec": 203.88800000000003,
+			"sentences": [
+				{
+					"text": "接著寫出院病摘，切到出院病摘頁籤。",
+					"card": {
+						"kind": "step",
+						"title": "切到出院病摘",
+						"body": "同一個頁面，左上切換"
+					},
+					"file": "audio/quick_dis_00_c3be3570.mp3",
+					"startSec": 122.00800000000002,
+					"durSec": 5.184
+				},
+				{
+					"text": "一樣先按自動帶入欄位。",
+					"file": "audio/quick_dis_01_cde6d256.mp3",
+					"startSec": 127.59200000000003,
+					"durSec": 3.48
+				},
+				{
+					"text": "主訴、病史等段落，會沿用入院病摘。",
+					"card": {
+						"kind": "write",
+						"title": "沿用入院病摘",
+						"body": "入院時寫好的段落，出院直接沿用"
+					},
+					"file": "audio/quick_dis_02_7f29c064.mp3",
+					"startSec": 131.47200000000004,
+					"durSec": 5.136
+				},
+				{
+					"text": "按確定帶入。",
+					"file": "audio/quick_dis_03_00c67427.mp3",
+					"startSec": 137.00800000000004,
+					"durSec": 2.184
+				},
+				{
+					"text": "帶入後，有兩段一定要核對。",
+					"file": "audio/quick_dis_04_d481fae2.mp3",
+					"startSec": 139.59200000000004,
+					"durSec": 3.912
+				},
+				{
+					"text": "出院狀態會預設成全部正常。",
+					"card": {
+						"kind": "warn",
+						"title": "出院狀態",
+						"body": "預設全部正常，要依實際修改"
+					},
+					"file": "audio/quick_dis_05_1e022d99.mp3",
+					"startSec": 143.90400000000005,
+					"durSec": 4.104
+				},
+				{
+					"text": "出院帶藥也會帶入，要對照出院醫囑。",
+					"card": {
+						"kind": "warn",
+						"title": "出院帶藥",
+						"body": "對照醫囑，確認藥名與劑量"
+					},
+					"file": "audio/quick_dis_06_a0772509.mp3",
+					"startSec": 148.40800000000004,
+					"durSec": 4.776
+				},
+				{
+					"text": "合併症和隔離狀態不會帶入，要自己填。",
+					"card": {
+						"kind": "rule",
+						"title": "合併症、隔離狀態",
+						"body": "不會自動帶入，一定要自己填"
+					},
+					"file": "audio/quick_dis_07_8c411038.mp3",
+					"startSec": 153.58400000000003,
+					"durSec": 5.064
+				},
+				{
+					"text": "按知道了，回到編輯器。",
+					"file": "audio/quick_dis_08_58eaa50d.mp3",
+					"startSec": 159.04800000000003,
+					"durSec": 3.36
+				},
+				{
+					"text": "住院治療經過，寫做了哪些治療與結果。",
+					"card": {
+						"kind": "write",
+						"title": "住院治療經過",
+						"body": "治療內容、反應、併發症與處置"
+					},
+					"file": "audio/quick_dis_09_1e46d6aa.mp3",
+					"startSec": 162.80800000000002,
+					"durSec": 5.4
+				},
+				{
+					"text": "存檔規則和入院一樣：先暫存，再送簽。",
+					"card": {
+						"kind": "rule",
+						"title": "存檔同入院",
+						"body": "暫存＝草稿；正式儲存＝送簽"
+					},
+					"file": "audio/quick_dis_10_e6788fb7.mp3",
+					"startSec": 168.60800000000003,
+					"durSec": 5.568
+				},
+				{
+					"text": "送簽前，可以按預覽看整份病摘。",
+					"file": "audio/quick_dis_11_5d84a59d.mp3",
+					"startSec": 174.57600000000002,
+					"durSec": 4.632
+				},
+				{
+					"text": "最後記住三條鐵律。",
+					"card": {
+						"kind": "rule",
+						"title": "三條鐵律",
+						"body": "這三條，寫每一份病摘都適用"
+					},
+					"file": "audio/quick_dis_12_4cd65ae1.mp3",
+					"startSec": 179.60800000000003,
+					"durSec": 3.072
+				},
+				{
+					"text": "第一，自動帶入只填空白段落。",
+					"card": {
+						"kind": "rule",
+						"title": "鐵律一",
+						"body": "自動帶入只填空白段落"
+					},
+					"file": "audio/quick_dis_13_d539079c.mp3",
+					"startSec": 183.08000000000004,
+					"durSec": 4.08
+				},
+				{
+					"text": "第二，AI 和帶入的內容，由你逐段核對。",
+					"card": {
+						"kind": "rule",
+						"title": "鐵律二",
+						"body": "你是作者，內容由你負責"
+					},
+					"file": "audio/quick_dis_14_eaa92f65.mp3",
+					"startSec": 187.56000000000003,
+					"durSec": 5.04
+				},
+				{
+					"text": "第三，簽核後就鎖定，只有主治能補充。",
+					"card": {
+						"kind": "rule",
+						"title": "鐵律三",
+						"body": "簽核後鎖定，限主治補充"
+					},
+					"file": "audio/quick_dis_15_de0da02f.mp3",
+					"startSec": 193.00000000000003,
+					"durSec": 5.232
+				},
+				{
+					"text": "接下來，逐章細講每一個步驟。",
+					"card": {
+						"kind": "tip",
+						"title": "接下來",
+						"body": "照寫作順序，一章一章細講"
+					},
+					"file": "audio/quick_dis_16_e333d5e9.mp3",
+					"startSec": 198.63200000000003,
+					"durSec": 4.056
+				}
+			]
+		},
+		{
+			"id": "entry",
+			"title": "選人：進入與切換病人",
+			"subtitle": "出入院病摘(new)・入口與病人頁首",
+			"chapter": 3,
+			"stage": "選人",
+			"part": "共通",
+			"startSec": 203.88800000000003,
+			"endSec": 305.98400000000004,
+			"sentences": [
+				{
+					"text": "寫病摘的第一步，是選對病人。",
+					"file": "audio/entry_00_2f7db19c.mp3",
+					"startSec": 206.28800000000004,
+					"durSec": 3.912
+				},
+				{
+					"text": "從病人資訊選單點出入院病摘。",
+					"card": {
+						"kind": "step",
+						"title": "從選單進入",
+						"body": "病人資訊選單 → 出入院病摘(new)"
+					},
+					"file": "audio/entry_01_6a78a30b.mp3",
+					"startSec": 210.60000000000005,
+					"durSec": 4.416
+				},
+				{
+					"text": "本片直接從選人開始。",
+					"file": "audio/entry_02_633fceb3.mp3",
+					"startSec": 215.41600000000005,
+					"durSec": 3.336
+				},
+				{
+					"text": "網址沒帶病人時，會先跳出選擇病人視窗。",
+					"file": "audio/entry_03_d22bd0dd.mp3",
+					"startSec": 219.15200000000004,
+					"durSec": 5.544
+				},
+				{
+					"text": "輸入身分證字號或病歷號，按 Enter。",
+					"card": {
+						"kind": "step",
+						"title": "搜尋病人",
+						"body": "身分證字號或病歷號，字母大小寫皆可"
+					},
+					"file": "audio/entry_04_9685d1ae.mp3",
+					"startSec": 225.09600000000003,
+					"durSec": 4.512
+				},
+				{
+					"text": "病歷號是醫院給每位病人的固定編號。",
+					"file": "audio/entry_05_adc38da7.mp3",
+					"startSec": 230.00800000000004,
+					"durSec": 4.584
+				},
+				{
+					"text": "找到病人，就直接開啟他的病摘。",
+					"file": "audio/entry_06_02094119.mp3",
+					"startSec": 234.99200000000005,
+					"durSec": 4.224
+				},
+				{
+					"text": "頁首固定顯示姓名、年齡與病歷號。",
+					"card": {
+						"kind": "design",
+						"title": "永遠知道寫的是誰",
+						"body": "病人識別資訊固定在頁首"
+					},
+					"file": "audio/entry_07_3a6f8e76.mp3",
+					"startSec": 239.61600000000004,
+					"durSec": 4.848
+				},
+				{
+					"text": "身分證字號只顯示前六碼，保護隱私。",
+					"file": "audio/entry_08_f872df54.mp3",
+					"startSec": 244.86400000000003,
+					"durSec": 5.208
+				},
+				{
+					"text": "右邊是住院號、入院日、床號與簽核狀態。",
+					"file": "audio/entry_09_68990e19.mp3",
+					"startSec": 250.47200000000004,
+					"durSec": 5.88
+				},
+				{
+					"text": "住院號是每次住院一個編號，病歷號不變。",
+					"file": "audio/entry_10_876fd7ca.mp3",
+					"startSec": 256.752,
+					"durSec": 5.28
+				},
+				{
+					"text": "要換病人，按病歷號旁的切換病人。",
+					"card": {
+						"kind": "step",
+						"title": "切換病人",
+						"body": "病歷號旁按鈕，輸入後按 Enter"
+					},
+					"file": "audio/entry_11_5688451d.mp3",
+					"startSec": 262.432,
+					"durSec": 4.512
+				},
+				{
+					"text": "輸入的是目前病人，會提醒已是目前病人。",
+					"file": "audio/entry_12_79fac942.mp3",
+					"startSec": 267.344,
+					"durSec": 5.52
+				},
+				{
+					"text": "查無此人時，會用紅色提示告訴你。",
+					"file": "audio/entry_13_7a8a621f.mp3",
+					"startSec": 273.264,
+					"durSec": 4.728
+				},
+				{
+					"text": "改輸入另一位病人的身分證字號。",
+					"file": "audio/entry_14_51d1a613.mp3",
+					"startSec": 278.392,
+					"durSec": 4.08
+				},
+				{
+					"text": "畫面重新載入，全部換成新病人的資料。",
+					"file": "audio/entry_15_ba6c6031.mp3",
+					"startSec": 282.872,
+					"durSec": 5.112
+				},
+				{
+					"text": "切換前請先暫存，未暫存的內容不會保留。",
+					"card": {
+						"kind": "rule",
+						"title": "先暫存再切換",
+						"body": "切換會整頁重載，未暫存內容會遺失"
+					},
+					"file": "audio/entry_16_35f61e59.mp3",
+					"startSec": 288.384,
+					"durSec": 5.448
+				},
+				{
+					"text": "按瀏覽器上一頁，就能回到前一位病人。",
+					"card": {
+						"kind": "tip",
+						"title": "回到前一位",
+						"body": "瀏覽器「上一頁」即可返回"
+					},
+					"file": "audio/entry_17_6be219fb.mp3",
+					"startSec": 294.232,
+					"durSec": 5.088
+				},
+				{
+					"text": "選對病人，接著確認要寫哪一次住院。",
+					"file": "audio/entry_18_53cf77bb.mp3",
+					"startSec": 299.72,
+					"durSec": 5.064
+				}
+			]
+		},
+		{
+			"id": "layout_inpno",
+			"title": "事項：住院事件與版面",
+			"subtitle": "住院事件選擇器・三欄版面",
+			"chapter": 4,
+			"stage": "事項",
+			"part": "共通",
+			"startSec": 305.98400000000004,
+			"endSec": 396.032,
+			"sentences": [
+				{
+					"text": "第二步：確認要寫的是哪一次住院。",
+					"file": "audio/layout_inpno_00_ac45df0e.mp3",
+					"startSec": 308.384,
+					"durSec": 4.464
+				},
+				{
+					"text": "頁首下方的住院事件卡，就是這次住院。",
+					"file": "audio/layout_inpno_01_f58a01fa.mp3",
+					"startSec": 313.248,
+					"durSec": 5.136
+				},
+				{
+					"text": "卡片列出入院日、住院號、主治與診斷。",
+					"card": {
+						"kind": "step",
+						"title": "確認住院事件",
+						"body": "預設開啟最新一次住院"
+					},
+					"file": "audio/layout_inpno_02_25617baf.mp3",
+					"startSec": 318.784,
+					"durSec": 5.256
+				},
+				{
+					"text": "主治醫師負責這次住院，病摘由他簽核。",
+					"file": "audio/layout_inpno_03_41e63542.mp3",
+					"startSec": 324.44,
+					"durSec": 5.352
+				},
+				{
+					"text": "點右箭頭，切到較早的一次住院。",
+					"file": "audio/layout_inpno_04_72ee15bb.mp3",
+					"startSec": 330.192,
+					"durSec": 4.272
+				},
+				{
+					"text": "已簽核的舊病摘是唯讀，只能看不能改。",
+					"card": {
+						"kind": "rule",
+						"title": "已簽＝唯讀",
+						"body": "主治簽核後原文不能改，只有主治能簽後補充"
+					},
+					"file": "audio/layout_inpno_05_37b80bcd.mp3",
+					"startSec": 334.86400000000003,
+					"durSec": 4.728
+				},
+				{
+					"text": "點其他兩筆，可以看全部住院清單。",
+					"card": {
+						"kind": "step",
+						"title": "其他N筆",
+						"body": "列出全部住院，點一筆即切換"
+					},
+					"file": "audio/layout_inpno_06_cbae2abf.mp3",
+					"startSec": 339.992,
+					"durSec": 4.608
+				},
+				{
+					"text": "在清單點最新一筆，就切換回來。",
+					"file": "audio/layout_inpno_07_c5190983.mp3",
+					"startSec": 345,
+					"durSec": 4.416
+				},
+				{
+					"text": "左欄是撰寫區：入院病摘與出院病摘。",
+					"card": {
+						"kind": "step",
+						"title": "左欄：撰寫",
+						"body": "入院／出院分頁＋段落頁籤"
+					},
+					"file": "audio/layout_inpno_08_5083af28.mp3",
+					"startSec": 349.816,
+					"durSec": 5.28
+				},
+				{
+					"text": "入院時寫入院病摘，出院前整理出院病摘。",
+					"file": "audio/layout_inpno_09_afbb558b.mp3",
+					"startSec": 355.496,
+					"durSec": 5.76
+				},
+				{
+					"text": "段落頁籤一字排開，點一下就跳到該段。",
+					"file": "audio/layout_inpno_10_a3865275.mp3",
+					"startSec": 361.656,
+					"durSec": 5.04
+				},
+				{
+					"text": "右欄是參考資料：歷次出入院、時間軸、檢查。",
+					"card": {
+						"kind": "step",
+						"title": "右欄：查資料",
+						"body": "歷次出入院、時間軸、檢查"
+					},
+					"file": "audio/layout_inpno_11_07c64408.mp3",
+					"startSec": 367.096,
+					"durSec": 6.12
+				},
+				{
+					"text": "中間分隔線可以拖曳，調整左右寬度。",
+					"card": {
+						"kind": "tip",
+						"title": "拖曳分隔線",
+						"body": "查資料時把右欄拉寬一點"
+					},
+					"file": "audio/layout_inpno_12_b7ea9d23.mp3",
+					"startSec": 373.616,
+					"durSec": 4.992
+				},
+				{
+					"text": "底部固定是預覽、暫存與正式儲存。",
+					"file": "audio/layout_inpno_13_17642af9.mp3",
+					"startSec": 379.008,
+					"durSec": 4.776
+				},
+				{
+					"text": "寫到一半就先按暫存，內容才不會遺失。",
+					"card": {
+						"kind": "tip",
+						"title": "隨時暫存",
+						"body": "暫存是草稿，不送簽，可以一直改"
+					},
+					"file": "audio/layout_inpno_14_67b9e0a4.mp3",
+					"startSec": 384.18399999999997,
+					"durSec": 5.328
+				},
+				{
+					"text": "事項確認好，下一步先看資料再動筆。",
+					"card": {
+						"kind": "tip",
+						"title": "下一步：看資料",
+						"body": "先讀病歷與檢查，再開始寫"
+					},
+					"file": "audio/layout_inpno_15_141681b1.mp3",
+					"startSec": 389.912,
+					"durSec": 4.92
+				}
+			]
+		},
+		{
+			"id": "review",
+			"title": "先看資料：右欄輔助面板",
+			"subtitle": "歷次出入院・時間軸・檢查",
+			"chapter": 5,
+			"stage": "看資料",
+			"part": "共通",
+			"startSec": 396.032,
+			"endSec": 454.29599999999994,
+			"sentences": [
+				{
+					"text": "第三步是看資料，動筆前先了解病人。",
+					"file": "audio/review_00_3c443231.mp3",
+					"startSec": 398.43199999999996,
+					"durSec": 4.944
+				},
+				{
+					"text": "右欄是輔助面板，有三個分頁。",
+					"card": {
+						"kind": "step",
+						"title": "右欄三分頁",
+						"body": "歷次出入院、時間軸、檢查"
+					},
+					"file": "audio/review_01_5bff4c8c.mp3",
+					"startSec": 403.77599999999995,
+					"durSec": 4.248
+				},
+				{
+					"text": "歷次出入院，可以看之前住院的病摘。",
+					"card": {
+						"kind": "step",
+						"title": "歷次出入院",
+						"body": "選住院次，切換入院／出院病摘"
+					},
+					"file": "audio/review_02_78e42b85.mp3",
+					"startSec": 408.424,
+					"durSec": 4.704
+				},
+				{
+					"text": "上方選住院次，例如三月的化療住院。",
+					"file": "audio/review_03_10057732.mp3",
+					"startSec": 413.52799999999996,
+					"durSec": 4.968
+				},
+				{
+					"text": "點段落標題，就能展開全文閱讀。",
+					"file": "audio/review_04_f2e285af.mp3",
+					"startSec": 418.89599999999996,
+					"durSec": 4.584
+				},
+				{
+					"text": "時間軸分頁，查看門診與住院紀錄。",
+					"card": {
+						"kind": "step",
+						"title": "時間軸",
+						"body": "與主系統相同的完整時間軸"
+					},
+					"file": "audio/review_05_8f2e2905.mp3",
+					"startSec": 423.87999999999994,
+					"durSec": 4.968
+				},
+				{
+					"text": "檢查分頁，依日期列出所有檢查。",
+					"card": {
+						"kind": "step",
+						"title": "檢查",
+						"body": "點報告看內文，點數值看趨勢"
+					},
+					"file": "audio/review_06_7bb89365.mp3",
+					"startSec": 429.24799999999993,
+					"durSec": 4.776
+				},
+				{
+					"text": "點報告名稱，就能直接看報告內文。",
+					"file": "audio/review_07_a67ddaa5.mp3",
+					"startSec": 434.4239999999999,
+					"durSec": 4.608
+				},
+				{
+					"text": "底部固定顯示關鍵檢驗值。",
+					"card": {
+						"kind": "tip",
+						"title": "關鍵檢驗值",
+						"body": "CrCl、ANC、Hb、Plt、凝血功能"
+					},
+					"file": "audio/review_08_04263ccb.mp3",
+					"startSec": 439.4319999999999,
+					"durSec": 3.816
+				},
+				{
+					"text": "切換分頁不會重新載入，寫到一半也能查。",
+					"card": {
+						"kind": "design",
+						"title": "隨時對照",
+						"body": "分頁保留狀態，邊寫邊看不中斷"
+					},
+					"file": "audio/review_09_7b132c4e.mp3",
+					"startSec": 443.6479999999999,
+					"durSec": 5.496
+				},
+				{
+					"text": "看完資料，接著開始帶入。",
+					"file": "audio/review_10_35912738.mp3",
+					"startSec": 449.5439999999999,
+					"durSec": 3.552
+				}
+			]
+		},
+		{
+			"id": "adm_draft",
+			"title": "入院病摘：一鍵產生草稿",
+			"subtitle": "入院病摘・自動帶入欄位",
+			"chapter": 6,
+			"stage": "帶入",
+			"part": "入院",
+			"startSec": 454.29599999999994,
+			"endSec": 553.3679999999999,
+			"sentences": [
+				{
+					"text": "資料看過了，下一步是帶入：一鍵產生草稿。",
+					"file": "audio/adm_draft_00_56d3edcc.mp3",
+					"startSec": 456.6959999999999,
+					"durSec": 5.568
+				},
+				{
+					"text": "新住院的病人，入院病摘還是空白。",
+					"file": "audio/adm_draft_01_0cc1e358.mp3",
+					"startSec": 462.66399999999993,
+					"durSec": 4.824
+				},
+				{
+					"text": "點頁籤列右側的自動帶入欄位。",
+					"card": {
+						"kind": "step",
+						"title": "自動帶入欄位",
+						"body": "入院病摘頁籤右上方的魔杖按鈕"
+					},
+					"file": "audio/adm_draft_02_70aaefe8.mp3",
+					"startSec": 467.8879999999999,
+					"durSec": 4.08
+				},
+				{
+					"text": "先跳出確認視窗，列出將帶入的段落。",
+					"file": "audio/adm_draft_03_7d3b49dd.mp3",
+					"startSec": 472.36799999999994,
+					"durSec": 4.968
+				},
+				{
+					"text": "已寫好的過去病史，列在略過。",
+					"card": {
+						"kind": "rule",
+						"title": "只填空白段落",
+						"body": "已有內容一律保留，不會被覆蓋"
+					},
+					"file": "audio/adm_draft_04_f3fdc7fd.mp3",
+					"startSec": 477.73599999999993,
+					"durSec": 4.056
+				},
+				{
+					"text": "系統只填空白段落，不會蓋掉你寫的。",
+					"file": "audio/adm_draft_05_1d65fc39.mp3",
+					"startSec": 482.19199999999995,
+					"durSec": 4.68
+				},
+				{
+					"text": "確認無誤後，按確定帶入。",
+					"card": {
+						"kind": "step",
+						"title": "確定帶入",
+						"body": "等幾秒，按鈕會顯示目前進度"
+					},
+					"file": "audio/adm_draft_06_e4881a49.mp3",
+					"startSec": 487.27199999999993,
+					"durSec": 3.624
+				},
+				{
+					"text": "按鈕依序顯示讀取資料、AI 撰寫中。",
+					"file": "audio/adm_draft_07_618a5f66.mp3",
+					"startSec": 491.29599999999994,
+					"durSec": 4.872
+				},
+				{
+					"text": "結果視窗逐段標出文字來源。",
+					"card": {
+						"kind": "step",
+						"title": "看結果視窗",
+						"body": "每段標示來源：規則、AI 或刪句"
+					},
+					"file": "audio/adm_draft_08_63fa000d.mp3",
+					"startSec": 496.5679999999999,
+					"durSec": 4.128
+				},
+				{
+					"text": "規則，是程式直接從病歷資料抄寫。",
+					"file": "audio/adm_draft_09_0390ce40.mp3",
+					"startSec": 501.09599999999995,
+					"durSec": 4.824
+				},
+				{
+					"text": "主訴、診斷與計畫都由規則帶入。",
+					"file": "audio/adm_draft_10_f6e3da8d.mp3",
+					"startSec": 506.31999999999994,
+					"durSec": 4.584
+				},
+				{
+					"text": "現在病史由 AI 改寫成通順的段落。",
+					"file": "audio/adm_draft_11_8fe872ba.mp3",
+					"startSec": 511.3039999999999,
+					"durSec": 4.584
+				},
+				{
+					"text": "AI 寫的每一句都經過程式檢查。",
+					"card": {
+						"kind": "design",
+						"title": "程式把關",
+						"body": "數字、日期、藥名都要在病歷找得到"
+					},
+					"file": "audio/adm_draft_12_136a1994.mp3",
+					"startSec": 516.2879999999999,
+					"durSec": 4.272
+				},
+				{
+					"text": "找不到的數字，會刪掉該句或整段改回規則版。",
+					"file": "audio/adm_draft_13_03cc3e6c.mp3",
+					"startSec": 520.9599999999999,
+					"durSec": 5.616
+				},
+				{
+					"text": "按知道了，草稿就寫進各個段落。",
+					"file": "audio/adm_draft_14_66f839b0.mp3",
+					"startSec": 526.9759999999999,
+					"durSec": 4.248
+				},
+				{
+					"text": "腫瘤病史由程式保留，AI 改不到。",
+					"file": "audio/adm_draft_15_4a7ac995.mp3",
+					"startSec": 531.6239999999999,
+					"durSec": 4.584
+				},
+				{
+					"text": "你是病摘的作者，每段都要親自核對。",
+					"card": {
+						"kind": "rule",
+						"title": "你是作者",
+						"body": "AI 與帶入的內容，都要逐段核對修改"
+					},
+					"file": "audio/adm_draft_16_a6ef9cef.mp3",
+					"startSec": 536.608,
+					"durSec": 4.704
+				},
+				{
+					"text": "核對修改後，再暫存或送主治醫師簽核。",
+					"file": "audio/adm_draft_17_5d3b2a03.mp3",
+					"startSec": 541.712,
+					"durSec": 5.328
+				},
+				{
+					"text": "建議先產生草稿，再補上自己的觀察。",
+					"card": {
+						"kind": "tip",
+						"title": "流程建議",
+						"body": "先一鍵草稿，再修改與補充"
+					},
+					"file": "audio/adm_draft_18_854ed98c.mp3",
+					"startSec": 547.4399999999999,
+					"durSec": 4.728
+				}
+			]
+		},
+		{
+			"id": "adm_hpi",
+			"title": "修改：主訴與現在病史",
+			"subtitle": "入院病摘・急診初次評估／Present Illness 摘要",
+			"chapter": 7,
+			"stage": "修改",
+			"part": "入院",
+			"startSec": 553.3679999999999,
+			"endSec": 681.2479999999999,
+			"sentences": [
+				{
+					"text": "修改階段，先看主訴與現在病史怎麼寫。",
+					"file": "audio/adm_hpi_00_54e9eae1.mp3",
+					"startSec": 555.7679999999999,
+					"durSec": 5.496
+				},
+				{
+					"text": "主訴只寫一句：主要症狀加上多久。",
+					"card": {
+						"kind": "write",
+						"title": "主訴/入院原因",
+						"body": "一句話：主要症狀＋多久，或排程目的"
+					},
+					"file": "audio/adm_hpi_01_20bcdb81.mp3",
+					"startSec": 561.6639999999999,
+					"durSec": 4.68
+				},
+				{
+					"text": "排程入院就寫目的，例如化療第三次。",
+					"file": "audio/adm_hpi_02_f728f9b5.mp3",
+					"startSec": 566.7439999999999,
+					"durSec": 5.04
+				},
+				{
+					"text": "現在病史依時間順序，寫這次怎麼發病。",
+					"card": {
+						"kind": "write",
+						"title": "現在病史",
+						"body": "時序：起始、變化、陽性與重要陰性、處置"
+					},
+					"file": "audio/adm_hpi_03_06734e85.mp3",
+					"startSec": 572.184,
+					"durSec": 5.256
+				},
+				{
+					"text": "何時開始、怎麼變化、做過哪些處置。",
+					"file": "audio/adm_hpi_04_713b3e94.mp3",
+					"startSec": 577.8399999999999,
+					"durSec": 4.992
+				},
+				{
+					"text": "腫瘤病人先交代診斷、分期與治療史。",
+					"file": "audio/adm_hpi_05_29f57346.mp3",
+					"startSec": 583.232,
+					"durSec": 5.256
+				},
+				{
+					"text": "寫的時候，有兩個參考來源可以用。",
+					"file": "audio/adm_hpi_06_226ec58f.mp3",
+					"startSec": 588.8879999999999,
+					"durSec": 4.488
+				},
+				{
+					"text": "第一個是最近一次的急診初次評估。",
+					"card": {
+						"kind": "step",
+						"title": "急診初次評估",
+						"body": "現在四十八小時內有急診才出現"
+					},
+					"file": "audio/adm_hpi_07_3c3f3c09.mp3",
+					"startSec": 593.776,
+					"durSec": 4.416
+				},
+				{
+					"text": "只有四十八小時內來過急診，才會出現。",
+					"file": "audio/adm_hpi_08_32b54263.mp3",
+					"startSec": 598.592,
+					"durSec": 5.208
+				},
+				{
+					"text": "點開就是急診醫師寫的原文。",
+					"file": "audio/adm_hpi_09_6852e00c.mp3",
+					"startSec": 604.1999999999999,
+					"durSec": 3.744
+				},
+				{
+					"text": "上方標出急診日期、書寫時間與醫師。",
+					"card": {
+						"kind": "warn",
+						"title": "未簽章提醒",
+						"body": "急診紀錄可能仍會修改，請核對"
+					},
+					"file": "audio/adm_hpi_10_f1416dfb.mp3",
+					"startSec": 608.3439999999999,
+					"durSec": 5.28
+				},
+				{
+					"text": "還沒簽章的，會提醒內容可能再修改。",
+					"file": "audio/adm_hpi_11_291d8843.mp3",
+					"startSec": 614.0239999999999,
+					"durSec": 4.872
+				},
+				{
+					"text": "反白一段文字，放開滑鼠就自動複製。",
+					"card": {
+						"kind": "step",
+						"title": "選取即複製",
+						"body": "反白放開滑鼠，自動複製到剪貼簿"
+					},
+					"file": "audio/adm_hpi_12_63964cdd.mp3",
+					"startSec": 619.2959999999999,
+					"durSec": 5.016
+				},
+				{
+					"text": "也可以複製全文，或直接帶入本段落。",
+					"file": "audio/adm_hpi_13_b5313005.mp3",
+					"startSec": 624.712,
+					"durSec": 4.872
+				},
+				{
+					"text": "第二個參考來源是 PI 摘要。",
+					"card": {
+						"kind": "step",
+						"title": "PI 摘要",
+						"body": "勾選來源，AI 生成後帶入"
+					},
+					"file": "audio/adm_hpi_14_8451fa65.mp3",
+					"startSec": 629.984,
+					"durSec": 3.744
+				},
+				{
+					"text": "按鈕叫新增 Present Illness 摘要。",
+					"file": "audio/adm_hpi_15_8f9dafb1.mp3",
+					"startSec": 634.128,
+					"durSec": 3.672
+				},
+				{
+					"text": "左欄勾選急診、門診或前次入院的病程。",
+					"file": "audio/adm_hpi_16_a648d497.mp3",
+					"startSec": 638.2,
+					"durSec": 5.184
+				},
+				{
+					"text": "打開畫重點模式，只把反白段落交給 AI。",
+					"card": {
+						"kind": "tip",
+						"title": "畫重點模式",
+						"body": "只送畫線重點，摘要更精準"
+					},
+					"file": "audio/adm_hpi_17_be750478.mp3",
+					"startSec": 643.784,
+					"durSec": 5.28
+				},
+				{
+					"text": "切到 AI 生成，按生成入院病歷摘要。",
+					"file": "audio/adm_hpi_18_af45e086.mp3",
+					"startSec": 649.4639999999999,
+					"durSec": 4.92
+				},
+				{
+					"text": "摘要產生完成後，按帶入。",
+					"file": "audio/adm_hpi_19_b9f20349.mp3",
+					"startSec": 654.784,
+					"durSec": 3.648
+				},
+				{
+					"text": "AI 只是草稿，你才是作者，請逐句核對。",
+					"card": {
+						"kind": "rule",
+						"title": "逐段核對",
+						"body": "AI 與帶入內容都要自己核對、修改"
+					},
+					"file": "audio/adm_hpi_20_ce26de14.mp3",
+					"startSec": 658.832,
+					"durSec": 5.352
+				},
+				{
+					"text": "例如 AI 寫發燒三天，急診紀錄是兩天。",
+					"file": "audio/adm_hpi_21_8c0641fa.mp3",
+					"startSec": 664.584,
+					"durSec": 5.376
+				},
+				{
+					"text": "直接在段落裡改正，以原始紀錄為準。",
+					"card": {
+						"kind": "step",
+						"title": "直接改正",
+						"body": "與原始紀錄不符，直接在段落修改"
+					},
+					"file": "audio/adm_hpi_22_fde3edd4.mp3",
+					"startSec": 670.3599999999999,
+					"durSec": 4.896
+				},
+				{
+					"text": "接著自己刪去重複，整理成一段。",
+					"file": "audio/adm_hpi_23_72030407.mp3",
+					"startSec": 675.656,
+					"durSec": 4.392
+				}
+			]
+		},
+		{
+			"id": "adm_forms",
+			"title": "一項一項：過去病史到體檢",
+			"subtitle": "入院病摘・過去病史／個人及家族史／R.O.S／體檢",
+			"chapter": 8,
+			"stage": "一項一項",
+			"part": "入院",
+			"startSec": 681.2479999999999,
+			"endSec": 795.6959999999996,
+			"sentences": [
+				{
+					"text": "一項一項寫，過去病史到體檢都有表單。",
+					"file": "audio/adm_forms_00_13bfaea8.mp3",
+					"startSec": 683.6479999999999,
+					"durSec": 5.208
+				},
+				{
+					"text": "過去病史寫慢性病、手術、過敏與用藥。",
+					"card": {
+						"kind": "write",
+						"title": "過去病史",
+						"body": "慢性病（年份、控制、用藥）、手術、過敏"
+					},
+					"file": "audio/adm_forms_01_e20178a1.mp3",
+					"startSec": 689.2559999999999,
+					"durSec": 5.424
+				},
+				{
+					"text": "按標題列的表單按鈕，或直接按 F1。",
+					"card": {
+						"kind": "key",
+						"title": "F1 開表單",
+						"body": "在段落中按 F1，等同按表單按鈕"
+					},
+					"file": "audio/adm_forms_02_3571b98b.mp3",
+					"startSec": 695.0799999999998,
+					"durSec": 4.608
+				},
+				{
+					"text": "勾選糖尿病、高血壓與 B 肝，填上年份。",
+					"file": "audio/adm_forms_03_69769eba.mp3",
+					"startSec": 700.0879999999999,
+					"durSec": 5.136
+				},
+				{
+					"text": "按帶回，就是把表單內容寫回段落。",
+					"card": {
+						"kind": "rule",
+						"title": "帶回＝寫回段落",
+						"body": "附加到段落最後，不會覆蓋原文"
+					},
+					"file": "audio/adm_forms_04_5f947e5a.mp3",
+					"startSec": 705.6239999999998,
+					"durSec": 4.608
+				},
+				{
+					"text": "沒勾的項目會寫成陰性，有病史都要勾。",
+					"card": {
+						"kind": "warn",
+						"title": "沒勾＝陰性",
+						"body": "表單沒勾的疾病會寫成 (-)"
+					},
+					"file": "audio/adm_forms_05_5860ba71.mp3",
+					"startSec": 710.6319999999998,
+					"durSec": 5.112
+				},
+				{
+					"text": "帶回後，刪掉段落裡重複的舊條列。",
+					"file": "audio/adm_forms_06_17277199.mp3",
+					"startSec": 716.1439999999998,
+					"durSec": 4.464
+				},
+				{
+					"text": "個人及家族史寫抽菸、喝酒、職業與家族病史。",
+					"card": {
+						"kind": "write",
+						"title": "個人及家族史",
+						"body": "菸酒、職業；家族史寫誰、何病、幾歲發病"
+					},
+					"file": "audio/adm_forms_07_1d7f4c2e.mp3",
+					"startSec": 721.0079999999998,
+					"durSec": 6.072
+				},
+				{
+					"text": "王小明不抽菸，維持 never smoker。",
+					"file": "audio/adm_forms_08_c550d6c0.mp3",
+					"startSec": 727.4799999999998,
+					"durSec": 4.152
+				},
+				{
+					"text": "有抽菸史的病人，改選後會出現包年計算器。",
+					"card": {
+						"kind": "tip",
+						"title": "Pack-years",
+						"body": "曾抽或現抽才出現，支數×年數自動換算"
+					},
+					"file": "audio/adm_forms_09_7d123669.mp3",
+					"startSec": 732.0319999999998,
+					"durSec": 5.712
+				},
+				{
+					"text": "切到家族史，選有家族史並新增親屬。",
+					"card": {
+						"kind": "step",
+						"title": "家族史產生器",
+						"body": "親屬、癌別、診斷年齡，自動產文"
+					},
+					"file": "audio/adm_forms_10_544a0627.mp3",
+					"startSec": 738.1439999999998,
+					"durSec": 5.184
+				},
+				{
+					"text": "父親大腸癌，填上癌別與診斷年齡。",
+					"file": "audio/adm_forms_11_2c1a3b57.mp3",
+					"startSec": 743.7279999999997,
+					"durSec": 4.896
+				},
+				{
+					"text": "一等親罹癌，或四十五歲前發病，都會標紅旗。",
+					"card": {
+						"kind": "design",
+						"title": "NCCN 紅旗",
+						"body": "早發（<45 歲）、一等親罹癌等；不自動下診斷"
+					},
+					"file": "audio/adm_forms_12_33f43bd0.mp3",
+					"startSec": 749.0239999999998,
+					"durSec": 5.976
+				},
+				{
+					"text": "系統回顧要逐系統問，寫陽性與重要陰性。",
+					"card": {
+						"kind": "write",
+						"title": "R.O.S",
+						"body": "逐系統詢問，寫陽性與重要的陰性"
+					},
+					"file": "audio/adm_forms_13_8e29e5ef.mp3",
+					"startSec": 755.3999999999997,
+					"durSec": 5.88
+				},
+				{
+					"text": "逐系統問過、確實沒症狀，才按都正常。",
+					"file": "audio/adm_forms_14_7ba3939b.mp3",
+					"startSec": 761.6799999999997,
+					"durSec": 5.256
+				},
+				{
+					"text": "有異常的系統，清掉後點症狀加上去。",
+					"file": "audio/adm_forms_15_8ed260a7.mp3",
+					"startSec": 767.3359999999997,
+					"durSec": 4.896
+				},
+				{
+					"text": "體檢寫生命徵象，再從頭到腳逐項記錄。",
+					"card": {
+						"kind": "write",
+						"title": "體檢發現",
+						"body": "生命徵象＋從頭到腳；異常寫位置大小性質"
+					},
+					"file": "audio/adm_forms_16_7e20e608.mp3",
+					"startSec": 772.6319999999997,
+					"durSec": 5.304
+				},
+				{
+					"text": "標題列有體檢表單與生命徵象按鈕可用。",
+					"file": "audio/adm_forms_17_1d16137a.mp3",
+					"startSec": 778.3359999999997,
+					"durSec": 5.328
+				},
+				{
+					"text": "異常要寫具體，例如淋巴結位置與大小。",
+					"file": "audio/adm_forms_18_6196efee.mp3",
+					"startSec": 784.0639999999996,
+					"durSec": 5.376
+				},
+				{
+					"text": "表單不會自動存檔，填完記得按帶回。",
+					"card": {
+						"kind": "warn",
+						"title": "記得帶回",
+						"body": "表單不自動存檔，關閉即遺失"
+					},
+					"file": "audio/adm_forms_19_c5f64f54.mp3",
+					"startSec": 789.8399999999996,
+					"durSec": 4.656
+				}
+			]
+		},
+		{
+			"id": "adm_lab48",
+			"title": "檢驗：帶入 48 小時全部資料",
+			"subtitle": "入院病摘・檢驗檢查值",
+			"chapter": 9,
+			"stage": "一項一項",
+			"part": "入院",
+			"startSec": 795.6959999999996,
+			"endSec": 880.2239999999998,
+			"sentences": [
+				{
+					"text": "一項一項寫，來到檢驗檢查值。",
+					"file": "audio/adm_lab48_00_60239555.mp3",
+					"startSec": 798.0959999999995,
+					"durSec": 4.392
+				},
+				{
+					"text": "這段寫入院當下的檢驗與影像重點。",
+					"card": {
+						"kind": "write",
+						"title": "檢驗檢查值",
+						"body": "入院當下（約前 48 小時）的檢驗與影像重點"
+					},
+					"file": "audio/adm_lab48_01_ff703028.mp3",
+					"startSec": 802.8879999999996,
+					"durSec": 4.68
+				},
+				{
+					"text": "數值不必手抄，標題列右側可一鍵帶入。",
+					"card": {
+						"kind": "step",
+						"title": "找到帶入工具",
+						"body": "標題列右側：區間、格式設定、帶入按鈕"
+					},
+					"file": "audio/adm_lab48_02_340d98f4.mp3",
+					"startSec": 807.9679999999996,
+					"durSec": 5.16
+				},
+				{
+					"text": "區間預設是入院前四十八小時。",
+					"card": {
+						"kind": "step",
+						"title": "選擇區間",
+						"body": "預設入院前 48 小時，可改最近 48 小時"
+					},
+					"file": "audio/adm_lab48_03_4d63b2b2.mp3",
+					"startSec": 813.5279999999996,
+					"durSec": 4.512
+				},
+				{
+					"text": "住院中補寫時，可改成最近四十八小時。",
+					"file": "audio/adm_lab48_04_a3a693ab.mp3",
+					"startSec": 818.4399999999996,
+					"durSec": 5.352
+				},
+				{
+					"text": "這次記錄入院當下，維持預設即可。",
+					"file": "audio/adm_lab48_05_ef001cb6.mp3",
+					"startSec": 824.1919999999996,
+					"durSec": 4.752
+				},
+				{
+					"text": "格式設定和右側檢驗彙整共用。",
+					"card": {
+						"kind": "step",
+						"title": "調整格式",
+						"body": "沿用檢驗彙整的格式設定，可就地修改"
+					},
+					"file": "audio/adm_lab48_06_7ccc54fc.mp3",
+					"startSec": 829.3439999999996,
+					"durSec": 4.248
+				},
+				{
+					"text": "這裡套用住院系統，依類別分組對齊。",
+					"file": "audio/adm_lab48_07_1cb507f0.mp3",
+					"startSec": 833.9919999999996,
+					"durSec": 4.944
+				},
+				{
+					"text": "按下帶入四十八小時全部資料。",
+					"card": {
+						"kind": "step",
+						"title": "一鍵帶入",
+						"body": "時間窗內所有檢驗，附加到本段落"
+					},
+					"file": "audio/adm_lab48_08_a71d3276.mp3",
+					"startSec": 839.3359999999997,
+					"durSec": 4.224
+				},
+				{
+					"text": "提示訊息會寫出實際的起訖時間。",
+					"card": {
+						"kind": "tip",
+						"title": "確認區間",
+						"body": "提示會寫起訖時間與採檢次數，不必猜"
+					},
+					"file": "audio/adm_lab48_09_f5627da8.mp3",
+					"startSec": 843.9599999999997,
+					"durSec": 4.392
+				},
+				{
+					"text": "檢驗依採檢日期分組，接在原文之後。",
+					"file": "audio/adm_lab48_10_2de3c0bc.mp3",
+					"startSec": 848.7519999999997,
+					"durSec": 5.112
+				},
+				{
+					"text": "帶入只會附加，不會蓋掉你寫的內容。",
+					"card": {
+						"kind": "rule",
+						"title": "不覆蓋原文",
+						"body": "帶入一律附加在段落最後，已寫的保留"
+					},
+					"file": "audio/adm_lab48_11_2a3c50ca.mp3",
+					"startSec": 854.2639999999997,
+					"durSec": 4.536
+				},
+				{
+					"text": "入院後才抽的血，不會被帶進來。",
+					"file": "audio/adm_lab48_12_1c84bc3c.mp3",
+					"startSec": 859.1999999999997,
+					"durSec": 4.392
+				},
+				{
+					"text": "帶入後請挑重點，刪掉不需要的項目。",
+					"card": {
+						"kind": "warn",
+						"title": "你是作者",
+						"body": "帶入的是原始數值，要挑重點、逐項核對"
+					},
+					"file": "audio/adm_lab48_13_34c7a5aa.mp3",
+					"startSec": 863.9919999999997,
+					"durSec": 4.728
+				},
+				{
+					"text": "較久以前的住院，請改用右側檢查面板。",
+					"card": {
+						"kind": "warn",
+						"title": "資料範圍",
+						"body": "查無資料時，改用右側檢查逐日帶入"
+					},
+					"file": "audio/adm_lab48_14_e3b1aa81.mp3",
+					"startSec": 869.1199999999998,
+					"durSec": 5.112
+				},
+				{
+					"text": "一顆按鈕，取代逐日帶入好幾輪。",
+					"card": {
+						"kind": "design",
+						"title": "設計理念",
+						"body": "四十八小時常跨兩三天，一次帶齊"
+					},
+					"file": "audio/adm_lab48_15_facb23df.mp3",
+					"startSec": 874.6319999999998,
+					"durSec": 4.392
+				}
+			]
+		},
+		{
+			"id": "adm_plan",
+			"title": "入院診斷與 AI 計劃及評估",
+			"subtitle": "入院病摘・入院診斷／計劃及評估",
+			"chapter": 10,
+			"stage": "一項一項",
+			"part": "入院",
+			"startSec": 880.2239999999998,
+			"endSec": 974.2799999999999,
+			"sentences": [
+				{
+					"text": "接著是入院診斷與計劃及評估。",
+					"file": "audio/adm_plan_00_70e2e9e9.mp3",
+					"startSec": 882.6239999999998,
+					"durSec": 4.488
+				},
+				{
+					"text": "入院診斷：主要診斷寫第一個，含分期。",
+					"card": {
+						"kind": "write",
+						"title": "入院診斷",
+						"body": "主要診斷（含分期）寫第一個，共病依序在後"
+					},
+					"file": "audio/adm_plan_01_51f3b289.mp3",
+					"startSec": 887.5119999999998,
+					"durSec": 5.16
+				},
+				{
+					"text": "高血壓、糖尿病等共病，依序列在後面。",
+					"file": "audio/adm_plan_02_a060644f.mp3",
+					"startSec": 893.0719999999998,
+					"durSec": 5.184
+				},
+				{
+					"text": "計劃及評估，可以先請 AI 打草稿。",
+					"file": "audio/adm_plan_03_7b8011da.mp3",
+					"startSec": 898.6559999999997,
+					"durSec": 4.776
+				},
+				{
+					"text": "AI 以現在病史為依據，要先寫好。",
+					"card": {
+						"kind": "step",
+						"title": "先寫現在病史",
+						"body": "AI 以現在病史與執行中醫囑為依據"
+					},
+					"file": "audio/adm_plan_04_d743bc40.mp3",
+					"startSec": 903.8319999999998,
+					"durSec": 4.656
+				},
+				{
+					"text": "接著切到計劃及評估段落。",
+					"file": "audio/adm_plan_05_afa1cb08.mp3",
+					"startSec": 908.8879999999998,
+					"durSec": 3.864
+				},
+				{
+					"text": "每個問題以井字號開頭，寫現況與計畫。",
+					"card": {
+						"kind": "write",
+						"title": "計劃及評估",
+						"body": "每個問題以 # 開頭，底下寫現況與計畫"
+					},
+					"file": "audio/adm_plan_06_6f496303.mp3",
+					"startSec": 913.1519999999998,
+					"durSec": 5.328
+				},
+				{
+					"text": "在依據選單選擇資料來源。",
+					"card": {
+						"kind": "step",
+						"title": "選擇依據",
+						"body": "現在病史、目前醫囑，或兩者合併"
+					},
+					"file": "audio/adm_plan_07_879d4402.mp3",
+					"startSec": 918.8799999999998,
+					"durSec": 3.792
+				},
+				{
+					"text": "這裡選現在病史加醫囑。",
+					"file": "audio/adm_plan_08_ca749279.mp3",
+					"startSec": 923.0719999999998,
+					"durSec": 3.504
+				},
+				{
+					"text": "按下 AI 生成計畫評估。",
+					"card": {
+						"kind": "step",
+						"title": "AI 生成",
+						"body": "內容即時串流，填入本段落"
+					},
+					"file": "audio/adm_plan_09_5aa22b8c.mp3",
+					"startSec": 926.9759999999998,
+					"durSec": 3.528
+				},
+				{
+					"text": "AI 讀取病史與執行中的醫囑。",
+					"file": "audio/adm_plan_10_955a7490.mp3",
+					"startSec": 930.9039999999998,
+					"durSec": 3.96
+				},
+				{
+					"text": "這叫 POMR，也就是問題導向病歷。",
+					"card": {
+						"kind": "key",
+						"title": "POMR 格式",
+						"body": "# 問題、- 現況、-> 處置計畫"
+					},
+					"file": "audio/adm_plan_11_716e1f16.mp3",
+					"startSec": 935.2639999999998,
+					"durSec": 4.8
+				},
+				{
+					"text": "開頭先摘要病史，再逐一列出問題。",
+					"file": "audio/adm_plan_12_40f47e3f.mp3",
+					"startSec": 940.4639999999998,
+					"durSec": 4.776
+				},
+				{
+					"text": "最後列出穩定中的次要問題。",
+					"file": "audio/adm_plan_13_fcb4c8d3.mp3",
+					"startSec": 945.6399999999999,
+					"durSec": 3.936
+				},
+				{
+					"text": "若一鍵草稿已填好，可以直接修改。",
+					"file": "audio/adm_plan_14_48f52f46.mp3",
+					"startSec": 949.9759999999999,
+					"durSec": 4.584
+				},
+				{
+					"text": "想整段重寫，才按 AI 生成。",
+					"file": "audio/adm_plan_15_2a481962.mp3",
+					"startSec": 954.9599999999999,
+					"durSec": 4.032
+				},
+				{
+					"text": "段落已有內容時，會先詢問是否覆蓋。",
+					"card": {
+						"kind": "rule",
+						"title": "會覆蓋原內容",
+						"body": "已有內容時先確認，避免蓋掉手寫評估"
+					},
+					"file": "audio/adm_plan_16_a870ac63.mp3",
+					"startSec": 959.3919999999999,
+					"durSec": 5.16
+				},
+				{
+					"text": "AI 只是草稿，你才是作者。",
+					"card": {
+						"kind": "warn",
+						"title": "逐條核對",
+						"body": "AI 只是草稿，送簽前逐條核對修改"
+					},
+					"file": "audio/adm_plan_17_2a6ab6da.mp3",
+					"startSec": 964.9519999999999,
+					"durSec": 3.816
+				},
+				{
+					"text": "逐條核對修改後，再去存檔。",
+					"file": "audio/adm_plan_18_87541dcf.mp3",
+					"startSec": 969.1679999999999,
+					"durSec": 3.912
+				}
+			]
+		},
+		{
+			"id": "adm_save",
+			"title": "存檔：暫存、送簽與緊急探視",
+			"subtitle": "入院病摘・暫存與正式儲存",
+			"chapter": 11,
+			"stage": "CRUD",
+			"part": "入院",
+			"startSec": 974.2799999999999,
+			"endSec": 1138.6320000000003,
+			"sentences": [
+				{
+					"text": "入院病摘寫完，最後一步是存檔。",
+					"file": "audio/adm_save_00_336ea775.mp3",
+					"startSec": 976.6799999999998,
+					"durSec": 4.416
+				},
+				{
+					"text": "底部有兩種存檔：暫存與正式儲存。",
+					"card": {
+						"kind": "step",
+						"title": "兩種存檔",
+						"body": "暫存＝草稿；正式儲存＝送主治簽核"
+					},
+					"file": "audio/adm_save_01_83f04b40.mp3",
+					"startSec": 981.4959999999999,
+					"durSec": 5.016
+				},
+				{
+					"text": "暫存是草稿，所有人都看得到。",
+					"card": {
+						"kind": "rule",
+						"title": "暫存",
+						"body": "草稿所有人看得到，可一直改，不送簽"
+					},
+					"file": "audio/adm_save_02_b341ad5d.mp3",
+					"startSec": 986.9119999999999,
+					"durSec": 4.008
+				},
+				{
+					"text": "可以一直修改，不會送出簽核。",
+					"file": "audio/adm_save_03_a6249f09.mp3",
+					"startSec": 991.3199999999999,
+					"durSec": 4.2
+				},
+				{
+					"text": "正式儲存送簽，會送給主治醫師簽核。",
+					"card": {
+						"kind": "rule",
+						"title": "正式儲存/送簽",
+						"body": "寫入正式內容，送主治醫師簽核"
+					},
+					"file": "audio/adm_save_04_2447b742.mp3",
+					"startSec": 995.92,
+					"durSec": 5.16
+				},
+				{
+					"text": "送簽之前，團隊醫師都能修改。",
+					"card": {
+						"kind": "rule",
+						"title": "誰能修改",
+						"body": "送簽前團隊都能改；待簽只有主治能改"
+					},
+					"file": "audio/adm_save_05_616d0426.mp3",
+					"startSec": 1001.4799999999999,
+					"durSec": 4.512
+				},
+				{
+					"text": "送簽後，狀態會變成待簽，只有主治能改。",
+					"file": "audio/adm_save_06_6de86ad7.mp3",
+					"startSec": 1006.3919999999999,
+					"durSec": 5.544
+				},
+				{
+					"text": "送簽後發現錯誤，要請主治修改。",
+					"file": "audio/adm_save_07_c3b7bdf4.mp3",
+					"startSec": 1012.3359999999999,
+					"durSec": 4.848
+				},
+				{
+					"text": "主治簽核後是已簽，原文唯讀。",
+					"card": {
+						"kind": "rule",
+						"title": "已簽＝唯讀",
+						"body": "表單鈕變灰、部分帶入鈕隱藏；存檔鈕隱藏，僅主治有儲存補充"
+					},
+					"file": "audio/adm_save_08_74a10dc3.mp3",
+					"startSec": 1017.584,
+					"durSec": 4.344
+				},
+				{
+					"text": "非主治登入時，底部只剩預覽鈕。",
+					"file": "audio/adm_save_09_94e38937.mp3",
+					"startSec": 1022.328,
+					"durSec": 4.416
+				},
+				{
+					"text": "要補充，只有主治能用簽後補充追加。",
+					"file": "audio/adm_save_10_94098d62.mp3",
+					"startSec": 1027.144,
+					"durSec": 4.992
+				},
+				{
+					"text": "存檔前會檢查別人是否剛存過。",
+					"card": {
+						"kind": "rule",
+						"title": "存檔前檢查",
+						"body": "後存者覆蓋整份；載入最新會放棄你的修改"
+					},
+					"file": "audio/adm_save_11_83fd4c2a.mp3",
+					"startSec": 1032.536,
+					"durSec": 4.536
+				},
+				{
+					"text": "跳出提醒時，載入最新內容會放棄你的修改。",
+					"file": "audio/adm_save_12_7c44dd4d.mp3",
+					"startSec": 1037.472,
+					"durSec": 5.52
+				},
+				{
+					"text": "要保留的內容，先複製起來再載入。",
+					"file": "audio/adm_save_13_b8ac8d6b.mp3",
+					"startSec": 1043.392,
+					"durSec": 4.464
+				},
+				{
+					"text": "存檔前可以先按預覽，看整份病摘。",
+					"card": {
+						"kind": "tip",
+						"title": "先預覽",
+						"body": "底部預覽鈕，確認整份內容再存"
+					},
+					"file": "audio/adm_save_14_fe9971c9.mp3",
+					"startSec": 1048.256,
+					"durSec": 4.896
+				},
+				{
+					"text": "縮寫對照不用自己寫，存檔時自動產生。",
+					"card": {
+						"kind": "write",
+						"title": "縮寫對照",
+						"body": "不用自己寫，存檔時自動產生"
+					},
+					"file": "audio/adm_save_15_75b8fb15.mp3",
+					"startSec": 1053.5520000000001,
+					"durSec": 5.232
+				},
+				{
+					"text": "改了勾選，一定要再正式儲存一次。",
+					"card": {
+						"kind": "step",
+						"title": "緊急探視勾選框",
+						"body": "頁首住院號旁；改了勾選要再正式儲存"
+					},
+					"file": "audio/adm_save_16_32b9a706.mp3",
+					"startSec": 1059.1840000000002,
+					"durSec": 4.416
+				},
+				{
+					"text": "勾選後同步到院內緊急探視名單，",
+					"file": "audio/adm_save_17_9560c9b6.mp3",
+					"startSec": 1064.0000000000002,
+					"durSec": 4.464
+				},
+				{
+					"text": "供外部系統讀取，開放探視。",
+					"file": "audio/adm_save_18_7fce6723.mp3",
+					"startSec": 1068.8640000000003,
+					"durSec": 3.864
+				},
+				{
+					"text": "只有主治、專科護理師、住院醫師登入才會出現。",
+					"card": {
+						"kind": "rule",
+						"title": "誰看得到勾選框",
+						"body": "主治、專科護理師、住院醫師登入時才顯示"
+					},
+					"file": "audio/adm_save_19_677915f9.mp3",
+					"startSec": 1073.1280000000002,
+					"durSec": 6.336
+				},
+				{
+					"text": "學生登入看不到，請提醒學長姐確認。",
+					"file": "audio/adm_save_20_46373086.mp3",
+					"startSec": 1079.8640000000003,
+					"durSec": 4.992
+				},
+				{
+					"text": "預設沿用這次住院上次送出的值。",
+					"card": {
+						"kind": "rule",
+						"title": "預設值",
+						"body": "同住院號上次送出的值；查無才用選項預設"
+					},
+					"file": "audio/adm_save_21_567b43c2.mp3",
+					"startSec": 1085.2560000000003,
+					"durSec": 4.416
+				},
+				{
+					"text": "骨髓移植病房六D六E，固定不開放。",
+					"card": {
+						"kind": "rule",
+						"title": "6D／6E 病房",
+						"body": "骨髓移植病房固定不開放，勾選框停用"
+					},
+					"file": "audio/adm_save_22_c28d8fa6.mp3",
+					"startSec": 1090.0720000000003,
+					"durSec": 4.824
+				},
+				{
+					"text": "取消勾選，和上次不同時會出現提醒。",
+					"file": "audio/adm_save_23_d86a5bfe.mp3",
+					"startSec": 1095.2960000000003,
+					"durSec": 5.16
+				},
+				{
+					"text": "請另寫一篇病程紀錄，說明變更原因。",
+					"card": {
+						"kind": "rule",
+						"title": "與上次不同",
+						"body": "另寫一篇病程紀錄說明變更原因"
+					},
+					"file": "audio/adm_save_24_2d5b8860.mp3",
+					"startSec": 1100.8560000000002,
+					"durSec": 5.16
+				},
+				{
+					"text": "這位病人仍需開放，重新勾回來。",
+					"file": "audio/adm_save_25_a4d9e04f.mp3",
+					"startSec": 1106.4160000000002,
+					"durSec": 4.56
+				},
+				{
+					"text": "勾選後要再按一次正式儲存，才會生效。",
+					"card": {
+						"kind": "rule",
+						"title": "正式儲存才生效",
+						"body": "暫存不會更動緊急探視設定"
+					},
+					"file": "audio/adm_save_26_ef22489f.mp3",
+					"startSec": 1111.3760000000002,
+					"durSec": 5.232
+				},
+				{
+					"text": "效期七天，每次正式儲存重新起算。",
+					"card": {
+						"kind": "rule",
+						"title": "效期七天",
+						"body": "只有正式儲存算數，每次重新起算七天"
+					},
+					"file": "audio/adm_save_27_61f8165c.mp3",
+					"startSec": 1117.0080000000003,
+					"durSec": 4.992
+				},
+				{
+					"text": "七天後失效，仍需開放就再正式儲存。",
+					"file": "audio/adm_save_28_10e91d9a.mp3",
+					"startSec": 1122.4000000000003,
+					"durSec": 5.232
+				},
+				{
+					"text": "住院病程送出時，也有同一個選項。",
+					"card": {
+						"kind": "rule",
+						"title": "兩個入口",
+						"body": "病程送出也有此選項，同一張表，後存者為準"
+					},
+					"file": "audio/adm_save_29_06af65a1.mp3",
+					"startSec": 1128.0320000000004,
+					"durSec": 4.8
+				},
+				{
+					"text": "兩邊寫同一張表，以後存的為準。",
+					"file": "audio/adm_save_30_95c89dda.mp3",
+					"startSec": 1133.2320000000004,
+					"durSec": 4.2
+				}
+			]
+		},
+		{
+			"id": "dis_draft",
+			"title": "出院病摘：自動帶入欄位",
+			"subtitle": "出院病摘・一次預填空白段落",
+			"chapter": 12,
+			"stage": "帶入",
+			"part": "出院",
+			"startSec": 1138.6320000000003,
+			"endSec": 1277.288,
+			"sentences": [
+				{
+					"text": "入院寫完，出院時同樣先從帶入開始。",
+					"file": "audio/dis_draft_00_e5069195.mp3",
+					"startSec": 1141.0320000000004,
+					"durSec": 5.304
+				},
+				{
+					"text": "出院病摘也有一顆自動帶入欄位。",
+					"card": {
+						"kind": "step",
+						"title": "出院自動帶入",
+						"body": "出院病摘頁籤，同一位置的魔杖按鈕"
+					},
+					"file": "audio/dis_draft_01_b1ef0b51.mp3",
+					"startSec": 1146.7360000000003,
+					"durSec": 4.392
+				},
+				{
+					"text": "確認視窗列出每一段的帶入來源。",
+					"file": "audio/dis_draft_02_5ddaa925.mp3",
+					"startSec": 1151.5280000000002,
+					"durSec": 4.104
+				},
+				{
+					"text": "入院診斷、主訴到體檢，多半沿用入院病摘。",
+					"card": {
+						"kind": "write",
+						"title": "沿用入院病摘",
+						"body": "主訴、現在與過去病史、社交及家族史、體檢：確認是否更新"
+					},
+					"file": "audio/dis_draft_03_4e72c2b8.mp3",
+					"startSec": 1156.0320000000002,
+					"durSec": 5.712
+				},
+				{
+					"text": "出院診斷寫住院期間確立或新增的診斷。",
+					"card": {
+						"kind": "write",
+						"title": "出院診斷",
+						"body": "住院中確立或新增的診斷，主要診斷在前"
+					},
+					"file": "audio/dis_draft_04_951d466f.mp3",
+					"startSec": 1162.1440000000002,
+					"durSec": 5.136
+				},
+				{
+					"text": "住院治療經過是最重要的一段。",
+					"card": {
+						"kind": "write",
+						"title": "住院治療經過",
+						"body": "依問題寫治療、反應、併發症與出院狀況"
+					},
+					"file": "audio/dis_draft_05_6e2436e1.mp3",
+					"startSec": 1167.6800000000003,
+					"durSec": 4.008
+				},
+				{
+					"text": "依問題寫做了什麼治療、反應如何。",
+					"file": "audio/dis_draft_06_dce47160.mp3",
+					"startSec": 1172.0880000000002,
+					"durSec": 4.584
+				},
+				{
+					"text": "例如問題一，入院前的低燒，住院中未再發燒。",
+					"card": {
+						"kind": "write",
+						"title": "範例",
+						"body": "#1 低燒：已退，住院中未再發燒，血培養待報"
+					},
+					"file": "audio/dis_draft_07_59f6a3b3.mp3",
+					"startSec": 1177.0720000000001,
+					"durSec": 5.832
+				},
+				{
+					"text": "問題二 DLBCL，6月1日給 R-CHOP 第三次。",
+					"card": {
+						"kind": "write",
+						"title": "範例",
+						"body": "#2 DLBCL：6/1 R-CHOP C3；#3 噁心 G1：止吐改善"
+					},
+					"file": "audio/dis_draft_08_b0d93949.mp3",
+					"startSec": 1183.304,
+					"durSec": 5.736
+				},
+				{
+					"text": "這段先用規則加 AI 撰寫。",
+					"file": "audio/dis_draft_09_b6801600.mp3",
+					"startSec": 1189.44,
+					"durSec": 3.696
+				},
+				{
+					"text": "失敗才退回最新的 Summary Note。",
+					"file": "audio/dis_draft_10_c9e7a5c2.mp3",
+					"startSec": 1193.536,
+					"durSec": 3.672
+				},
+				{
+					"text": "已有內容的入院診斷，列在略過。",
+					"card": {
+						"kind": "rule",
+						"title": "只填空白段落",
+						"body": "已有內容的段落一律保留不動"
+					},
+					"file": "audio/dis_draft_11_120bce90.mp3",
+					"startSec": 1197.608,
+					"durSec": 4.248
+				},
+				{
+					"text": "檢驗檢查值、縮寫對照、隔離與合併症不帶入。",
+					"card": {
+						"kind": "warn",
+						"title": "這四段不帶入",
+						"body": "檢驗檢查值、縮寫對照、隔離狀態、合併症"
+					},
+					"file": "audio/dis_draft_12_0e97a9f7.mp3",
+					"startSec": 1202.2559999999999,
+					"durSec": 6
+				},
+				{
+					"text": "按確定帶入，各來源同時讀取。",
+					"card": {
+						"kind": "step",
+						"title": "確定帶入",
+						"body": "入院病摘、報告、醫囑、AI 同時進行"
+					},
+					"file": "audio/dis_draft_13_a93bb417.mp3",
+					"startSec": 1208.656,
+					"durSec": 4.104
+				},
+				{
+					"text": "結果視窗列出十五段已填入。",
+					"file": "audio/dis_draft_14_00f90ba4.mp3",
+					"startSec": 1213.1599999999999,
+					"durSec": 4.008
+				},
+				{
+					"text": "注意：出院狀態會先填成全部正常。",
+					"card": {
+						"kind": "warn",
+						"title": "出院狀態與帶藥",
+						"body": "預填全部正常與帶藥，務必對照實況修改"
+					},
+					"file": "audio/dis_draft_15_4c92941f.mp3",
+					"startSec": 1217.5679999999998,
+					"durSec": 4.968
+				},
+				{
+					"text": "出院帶藥也會一併帶入。",
+					"file": "audio/dis_draft_16_56df108a.mp3",
+					"startSec": 1222.9359999999997,
+					"durSec": 3.384
+				},
+				{
+					"text": "一定要對照病人實況修改。",
+					"file": "audio/dis_draft_17_ea74e07f.mp3",
+					"startSec": 1226.7199999999998,
+					"durSec": 3.6
+				},
+				{
+					"text": "住院治療經過由 AI 改寫，並通過檢查。",
+					"file": "audio/dis_draft_18_a25dc4d6.mp3",
+					"startSec": 1230.7199999999998,
+					"durSec": 5.376
+				},
+				{
+					"text": "放射線報告帶入住院期間的胸部 X 光。",
+					"file": "audio/dis_draft_19_9ba4ab71.mp3",
+					"startSec": 1236.4959999999999,
+					"durSec": 4.896
+				},
+				{
+					"text": "沒有報告的段落，會填一句英文。",
+					"file": "audio/dis_draft_20_dc39fe59.mp3",
+					"startSec": 1241.792,
+					"durSec": 4.176
+				},
+				{
+					"text": "Lacks substance，意思是本段無內容。",
+					"file": "audio/dis_draft_21_05df22b6.mp3",
+					"startSec": 1246.368,
+					"durSec": 4.272
+				},
+				{
+					"text": "某個來源讀取失敗，也會列在這裡。",
+					"card": {
+						"kind": "warn",
+						"title": "各來源獨立",
+						"body": "一支讀取失敗，其他段落照常帶入"
+					},
+					"file": "audio/dis_draft_22_f27cc699.mp3",
+					"startSec": 1251.04,
+					"durSec": 4.56
+				},
+				{
+					"text": "按知道了，打開住院治療經過。",
+					"file": "audio/dis_draft_23_3f8b84a3.mp3",
+					"startSec": 1256,
+					"durSec": 4.128
+				},
+				{
+					"text": "劑量與日期由程式填入，AI 只改敘述。",
+					"file": "audio/dis_draft_24_830776f6.mp3",
+					"startSec": 1260.528,
+					"durSec": 5.472
+				},
+				{
+					"text": "你是病摘的作者，每段都要親自核對。",
+					"card": {
+						"kind": "rule",
+						"title": "你是作者",
+						"body": "AI 與帶入的內容，都要逐段核對修改"
+					},
+					"file": "audio/dis_draft_25_a6ef9cef.mp3",
+					"startSec": 1266.4,
+					"durSec": 4.704
+				},
+				{
+					"text": "建議出院前先帶入，再逐段修改。",
+					"card": {
+						"kind": "tip",
+						"title": "流程建議",
+						"body": "出院前一鍵帶入，再逐段核對修改"
+					},
+					"file": "audio/dis_draft_26_0ad35423.mp3",
+					"startSec": 1271.5040000000001,
+					"durSec": 4.584
+				}
+			]
+		},
+		{
+			"id": "dis_panels",
+			"title": "出院：從右欄帶入",
+			"subtitle": "全部帶入・帶入對應欄・檢查報告",
+			"chapter": 13,
+			"stage": "帶入",
+			"part": "出院",
+			"startSec": 1277.288,
+			"endSec": 1361.4799999999996,
+			"sentences": [
+				{
+					"text": "帶入資料，也可以直接從右欄來。",
+					"file": "audio/dis_panels_00_f9c02291.mp3",
+					"startSec": 1279.688,
+					"durSec": 4.392
+				},
+				{
+					"text": "右欄選前次住院，切到出院病摘。",
+					"card": {
+						"kind": "step",
+						"title": "選住院次",
+						"body": "右欄子分頁要和左邊同為出院病摘"
+					},
+					"file": "audio/dis_panels_01_a3210b09.mp3",
+					"startSec": 1284.48,
+					"durSec": 4.68
+				},
+				{
+					"text": "按全部帶入，一次帶進所有段落。",
+					"card": {
+						"kind": "step",
+						"title": "全部帶入",
+						"body": "附加前次內容；過期資訊務必刪改"
+					},
+					"file": "audio/dis_panels_02_d83a271f.mp3",
+					"startSec": 1289.56,
+					"durSec": 4.272
+				},
+				{
+					"text": "左邊的住院治療經過，已接上前次內容。",
+					"file": "audio/dis_panels_03_730c55f5.mp3",
+					"startSec": 1294.232,
+					"durSec": 5.136
+				},
+				{
+					"text": "前次住院的內容，只能當背景參考。",
+					"card": {
+						"kind": "warn",
+						"title": "前次內容只當背景",
+						"body": "住院經過、診斷、帶藥改成這次的事實"
+					},
+					"file": "audio/dis_panels_04_18627b01.mp3",
+					"startSec": 1299.768,
+					"durSec": 4.56
+				},
+				{
+					"text": "住院經過、診斷、帶藥，都要改成這次的事實。",
+					"file": "audio/dis_panels_05_585e9a14.mp3",
+					"startSec": 1304.728,
+					"durSec": 5.568
+				},
+				{
+					"text": "不相干的內容，請直接刪除。",
+					"file": "audio/dis_panels_06_08c51144.mp3",
+					"startSec": 1310.6960000000001,
+					"durSec": 3.816
+				},
+				{
+					"text": "檢驗檢查值預設不帶，需要時先勾選。",
+					"card": {
+						"kind": "tip",
+						"title": "包含檢驗檢查值",
+						"body": "預設不勾，避免帶入過期數值"
+					},
+					"file": "audio/dis_panels_07_36877808.mp3",
+					"startSec": 1314.912,
+					"durSec": 5.208
+				},
+				{
+					"text": "只要某一段，就用帶入對應欄。",
+					"card": {
+						"kind": "step",
+						"title": "帶入對應欄",
+						"body": "附加到同名段落，左邊自動切過去"
+					},
+					"file": "audio/dis_panels_08_0b2e2175.mp3",
+					"startSec": 1320.52,
+					"durSec": 4.056
+				},
+				{
+					"text": "例如帶入一月住院做的心臟超音波。",
+					"card": {
+						"kind": "write",
+						"title": "特殊檢查",
+						"body": "心臟超音波、內視鏡等報告的重點結論"
+					},
+					"file": "audio/dis_panels_09_76da5cff.mp3",
+					"startSec": 1324.9759999999999,
+					"durSec": 4.536
+				},
+				{
+					"text": "前次的檢查請註明日期，當作背景。",
+					"card": {
+						"kind": "tip",
+						"title": "註明日期",
+						"body": "前次檢查標上日期，只當背景參考"
+					},
+					"file": "audio/dis_panels_10_a8b75641.mp3",
+					"startSec": 1329.9119999999998,
+					"durSec": 4.8
+				},
+				{
+					"text": "放射線報告，寫住院期間影像的重點。",
+					"card": {
+						"kind": "write",
+						"title": "放射線報告",
+						"body": "住院期間影像報告的重點結論"
+					},
+					"file": "audio/dis_panels_11_cf7cd246.mp3",
+					"startSec": 1335.1119999999999,
+					"durSec": 4.872
+				},
+				{
+					"text": "標題列可以直接帶入住院後的報告。",
+					"card": {
+						"kind": "step",
+						"title": "帶入檢查報告",
+						"body": "「帶入住院後的放射線報告」"
+					},
+					"file": "audio/dis_panels_12_6ef8f129.mp3",
+					"startSec": 1340.3839999999998,
+					"durSec": 4.44
+				},
+				{
+					"text": "預設只列住院期間，勾選後帶入內文。",
+					"file": "audio/dis_panels_13_b99a42b8.mp3",
+					"startSec": 1345.2239999999997,
+					"durSec": 5.016
+				},
+				{
+					"text": "病理和特殊檢查段落，也有同樣按鈕。",
+					"file": "audio/dis_panels_14_552e3749.mp3",
+					"startSec": 1350.6399999999996,
+					"durSec": 4.872
+				},
+				{
+					"text": "帶入都是附加，帶完記得逐段核對。",
+					"card": {
+						"kind": "rule",
+						"title": "帶入只附加",
+						"body": "不覆蓋原內容；你是作者，要逐段核對"
+					},
+					"file": "audio/dis_panels_15_814c010a.mp3",
+					"startSec": 1355.9119999999996,
+					"durSec": 4.368
+				}
+			]
+		},
+		{
+			"id": "dis_import",
+			"title": "出院病摘：段落帶入與修改",
+			"subtitle": "出院病摘・入院資訊、檢查段落",
+			"chapter": 14,
+			"stage": "修改",
+			"part": "出院",
+			"startSec": 1361.4799999999996,
+			"endSec": 1436.6879999999994,
+			"sentences": [
+				{
+					"text": "帶入之後要逐段修改，先看單段帶入。",
+					"file": "audio/dis_import_00_c2d993fa.mp3",
+					"startSec": 1363.8799999999997,
+					"durSec": 4.992
+				},
+				{
+					"text": "切到過去病史，點帶入入院病摘資訊。",
+					"card": {
+						"kind": "step",
+						"title": "帶入入院病摘資訊",
+						"body": "與入院病摘同名的段落才有這顆按鈕"
+					},
+					"file": "audio/dis_import_01_238080c6.mp3",
+					"startSec": 1369.2719999999997,
+					"durSec": 5.184
+				},
+				{
+					"text": "同次住院入院病摘的內容就帶進來了。",
+					"file": "audio/dis_import_02_2943bf93.mp3",
+					"startSec": 1374.8559999999998,
+					"durSec": 4.92
+				},
+				{
+					"text": "注意，它會直接取代這段原本的內容。",
+					"card": {
+						"kind": "rule",
+						"title": "會取代本段",
+						"body": "段落帶入直接取代原內容，不會先確認"
+					},
+					"file": "audio/dis_import_03_a734a72e.mp3",
+					"startSec": 1380.1759999999997,
+					"durSec": 4.608
+				},
+				{
+					"text": "帶入後，再依這次住院的變化修改。",
+					"file": "audio/dis_import_04_112fc9bb.mp3",
+					"startSec": 1385.1839999999997,
+					"durSec": 4.488
+				},
+				{
+					"text": "例如補上入院後才問到的手術史。",
+					"card": {
+						"kind": "step",
+						"title": "直接修改",
+						"body": "帶入的文字可在段落裡直接改寫"
+					},
+					"file": "audio/dis_import_05_29549a4e.mp3",
+					"startSec": 1390.0719999999997,
+					"durSec": 4.32
+				},
+				{
+					"text": "手術報告到其他檢查，寫報告的重點結論。",
+					"card": {
+						"kind": "write",
+						"title": "手術與檢查報告",
+						"body": "住院期間報告的重點結論；沒有就按無內容"
+					},
+					"file": "audio/dis_import_06_7c8a5620.mp3",
+					"startSec": 1394.7919999999997,
+					"durSec": 5.4
+				},
+				{
+					"text": "這次沒有手術，按標題列的無內容。",
+					"card": {
+						"kind": "step",
+						"title": "無內容",
+						"body": "檢查類段落一鍵填入 Lacks substance"
+					},
+					"file": "audio/dis_import_07_725023a5.mp3",
+					"startSec": 1400.5919999999996,
+					"durSec": 4.488
+				},
+				{
+					"text": "填入的英文意思是本段無內容。",
+					"file": "audio/dis_import_08_c7891ef0.mp3",
+					"startSec": 1405.4799999999996,
+					"durSec": 4.08
+				},
+				{
+					"text": "檢驗檢查、特殊檢查到病理報告也都有。",
+					"file": "audio/dis_import_09_4abfc963.mp3",
+					"startSec": 1409.9599999999996,
+					"durSec": 5.352
+				},
+				{
+					"text": "檢驗檢查寫報告的文字結論。",
+					"card": {
+						"kind": "key",
+						"title": "差一個「值」字",
+						"body": "檢驗檢查＝報告結論；檢驗檢查值＝數值表格"
+					},
+					"file": "audio/dis_import_10_0d795d05.mp3",
+					"startSec": 1415.7119999999995,
+					"durSec": 3.96
+				},
+				{
+					"text": "檢驗檢查值則放數值表格，兩段不同。",
+					"file": "audio/dis_import_11_0110b58d.mp3",
+					"startSec": 1420.0719999999994,
+					"durSec": 5.088
+				},
+				{
+					"text": "無內容按鈕遇到已有內容，會先跳出確認。",
+					"card": {
+						"kind": "rule",
+						"title": "防誤蓋",
+						"body": "無內容按鈕遇到已有內容會先確認"
+					},
+					"file": "audio/dis_import_12_5b0b96f9.mp3",
+					"startSec": 1425.5599999999995,
+					"durSec": 5.256
+				},
+				{
+					"text": "一鍵帶入後，再用段落按鈕補漏。",
+					"card": {
+						"kind": "tip",
+						"title": "流程建議",
+						"body": "先一鍵帶入，缺漏段落再單獨帶入"
+					},
+					"file": "audio/dis_import_13_64673508.mp3",
+					"startSec": 1431.2159999999994,
+					"durSec": 4.272
+				}
+			]
+		},
+		{
+			"id": "dis_status",
+			"title": "出院狀態、用藥與隔離",
+			"subtitle": "出院病摘・一項一項寫",
+			"chapter": 15,
+			"stage": "一項一項",
+			"part": "出院",
+			"startSec": 1436.6879999999994,
+			"endSec": 1553.2559999999987,
+			"sentences": [
+				{
+					"text": "現在一項一項寫：出院狀態、用藥、隔離。",
+					"file": "audio/dis_status_00_4003a696.mp3",
+					"startSec": 1439.0879999999995,
+					"durSec": 5.496
+				},
+				{
+					"text": "若已自動帶入，直接修改就好。",
+					"card": {
+						"kind": "warn",
+						"title": "已帶入就直接改",
+						"body": "不要再按帶回或帶入，以免重複"
+					},
+					"file": "audio/dis_status_01_a1a52380.mp3",
+					"startSec": 1444.9839999999995,
+					"durSec": 4.056
+				},
+				{
+					"text": "不要再按帶回或帶入，以免內容重複。",
+					"file": "audio/dis_status_02_5b2075b2.mp3",
+					"startSec": 1449.4399999999994,
+					"durSec": 4.824
+				},
+				{
+					"text": "這裡示範段落空白時的做法。",
+					"file": "audio/dis_status_03_755418c2.mp3",
+					"startSec": 1454.6639999999993,
+					"durSec": 3.624
+				},
+				{
+					"text": "出院狀態，記錄病人離院時的情況。",
+					"card": {
+						"kind": "write",
+						"title": "出院狀態",
+						"body": "生命徵象、意識、活動與協助程度、離院方式"
+					},
+					"file": "audio/dis_status_04_8a34a9a0.mp3",
+					"startSec": 1458.6879999999992,
+					"durSec": 4.584
+				},
+				{
+					"text": "點段落右上的出院狀態表單。",
+					"card": {
+						"kind": "step",
+						"title": "開啟表單",
+						"body": "段落標題列右側「出院狀態表單」"
+					},
+					"file": "audio/dis_status_05_908bf270.mp3",
+					"startSec": 1463.6719999999991,
+					"durSec": 3.768
+				},
+				{
+					"text": "四組選項：生命徵象、意識、協助、離院方式。",
+					"file": "audio/dis_status_06_8325703f.mp3",
+					"startSec": 1467.839999999999,
+					"durSec": 6.168
+				},
+				{
+					"text": "病人確實都正常，才按全部正常。",
+					"card": {
+						"kind": "step",
+						"title": "全部正常",
+						"body": "All Good：四組都選第一項"
+					},
+					"file": "audio/dis_status_07_bc150a2c.mp3",
+					"startSec": 1474.407999999999,
+					"durSec": 4.512
+				},
+				{
+					"text": "例如病人坐輪椅離院，才改這一項。",
+					"file": "audio/dis_status_08_adc41e58.mp3",
+					"startSec": 1479.319999999999,
+					"durSec": 4.56
+				},
+				{
+					"text": "下方預覽，會即時組成英文句子。",
+					"file": "audio/dis_status_09_7e07534c.mp3",
+					"startSec": 1484.279999999999,
+					"durSec": 4.488
+				},
+				{
+					"text": "確認後按帶回，附加到段落最後面。",
+					"card": {
+						"kind": "step",
+						"title": "帶回",
+						"body": "附加到段落末尾，不覆蓋原內容"
+					},
+					"file": "audio/dis_status_10_eaf9baa7.mp3",
+					"startSec": 1489.167999999999,
+					"durSec": 4.728
+				},
+				{
+					"text": "沒按帶回就關閉，填的內容不會保留。",
+					"card": {
+						"kind": "rule",
+						"title": "表單不會自動存",
+						"body": "要按「帶回」才會寫入段落"
+					},
+					"file": "audio/dis_status_11_b036e1be.mp3",
+					"startSec": 1494.295999999999,
+					"durSec": 4.632
+				},
+				{
+					"text": "出院指示及用藥，交代病人回家怎麼做。",
+					"card": {
+						"kind": "write",
+						"title": "出院指示及用藥",
+						"body": "出院帶藥、回診時間、衛教與返診警示症狀"
+					},
+					"file": "audio/dis_status_12_ee75c698.mp3",
+					"startSec": 1499.3279999999988,
+					"durSec": 5.064
+				},
+				{
+					"text": "點帶入出院帶藥，帶入這次的出院藥。",
+					"card": {
+						"kind": "step",
+						"title": "帶入出院帶藥",
+						"body": "本次住院的出院帶藥醫囑，逐行附加"
+					},
+					"file": "audio/dis_status_13_c7542863.mp3",
+					"startSec": 1504.7919999999988,
+					"durSec": 4.656
+				},
+				{
+					"text": "帶藥會一行一行，附加在段落最後面。",
+					"file": "audio/dis_status_14_6eaf5be0.mp3",
+					"startSec": 1509.8479999999988,
+					"durSec": 4.896
+				},
+				{
+					"text": "接著補上回診時間和返診警示症狀。",
+					"file": "audio/dis_status_15_eb498446.mp3",
+					"startSec": 1515.1439999999989,
+					"durSec": 4.824
+				},
+				{
+					"text": "隔離狀態，說明出院時是否需要隔離。",
+					"card": {
+						"kind": "write",
+						"title": "隔離狀態",
+						"body": "是否隔離、種類、病原體、出院時是否持續"
+					},
+					"file": "audio/dis_status_16_62142cb5.mp3",
+					"startSec": 1520.3679999999988,
+					"durSec": 5.112
+				},
+				{
+					"text": "這段不用開視窗，段落裡直接勾選。",
+					"card": {
+						"kind": "step",
+						"title": "滿版表單",
+						"body": "勾選即時寫入段落"
+					},
+					"file": "audio/dis_status_17_022730e5.mp3",
+					"startSec": 1525.8799999999987,
+					"durSec": 4.608
+				},
+				{
+					"text": "有隔離時，勾選種類，再填病原體。",
+					"file": "audio/dis_status_18_acfc4cb2.mp3",
+					"startSec": 1530.8879999999988,
+					"durSec": 4.776
+				},
+				{
+					"text": "並選出院時仍需持續，或已經解除。",
+					"file": "audio/dis_status_19_93dde748.mp3",
+					"startSec": 1536.0639999999987,
+					"durSec": 4.944
+				},
+				{
+					"text": "這位病人不需隔離，都不勾就是標準防護。",
+					"card": {
+						"kind": "tip",
+						"title": "沒有隔離",
+						"body": "自動寫入 Standard precautions only"
+					},
+					"file": "audio/dis_status_20_6cd8b49f.mp3",
+					"startSec": 1541.4079999999988,
+					"durSec": 5.208
+				},
+				{
+					"text": "勾選就組成標準句子，格式統一不漏寫。",
+					"card": {
+						"kind": "design",
+						"title": "結構化組句",
+						"body": "固定句型，交班與審閱一看就懂"
+					},
+					"file": "audio/dis_status_21_d203d9ef.mp3",
+					"startSec": 1547.0159999999987,
+					"durSec": 5.04
+				}
+			]
+		},
+		{
+			"id": "dis_staylab",
+			"title": "帶入住院期間所有檢驗值",
+			"subtitle": "出院病摘・檢驗檢查值",
+			"chapter": 16,
+			"stage": "一項一項",
+			"part": "出院",
+			"startSec": 1553.2559999999987,
+			"endSec": 1635.4079999999983,
+			"sentences": [
+				{
+					"text": "一項一項寫，來到出院的檢驗檢查值。",
+					"file": "audio/dis_staylab_00_791e5c70.mp3",
+					"startSec": 1555.6559999999988,
+					"durSec": 4.896
+				},
+				{
+					"text": "這段寫住院期間重要的檢驗與趨勢。",
+					"card": {
+						"kind": "write",
+						"title": "檢驗檢查值",
+						"body": "住院期間重要檢驗與變化趨勢"
+					},
+					"file": "audio/dis_staylab_01_1d4bedea.mp3",
+					"startSec": 1560.9519999999989,
+					"durSec": 4.68
+				},
+				{
+					"text": "這裡借三月的住院示範，實際請用在本次住院。",
+					"file": "audio/dis_staylab_02_be3d5dd1.mp3",
+					"startSec": 1566.0319999999988,
+					"durSec": 5.808
+				},
+				{
+					"text": "按下標題列的帶入住院期間所有。",
+					"card": {
+						"kind": "step",
+						"title": "開啟矩陣",
+						"body": "入院到出院的檢驗，一次攤開"
+					},
+					"file": "audio/dis_staylab_03_79f1600c.mp3",
+					"startSec": 1572.2399999999989,
+					"durSec": 4.32
+				},
+				{
+					"text": "列是檢驗項目，欄是採檢日期。",
+					"file": "audio/dis_staylab_04_fcd33403.mp3",
+					"startSec": 1576.959999999999,
+					"durSec": 4.512
+				},
+				{
+					"text": "群組依細菌、緊急生化、生化排序。",
+					"card": {
+						"kind": "tip",
+						"title": "群組順序",
+						"body": "細菌→緊急生化→生化→血液→免疫→糞便→尿液"
+					},
+					"file": "audio/dis_staylab_05_e989d4de.mp3",
+					"startSec": 1581.871999999999,
+					"durSec": 4.92
+				},
+				{
+					"text": "細菌培養是長文字，改成逐筆條列。",
+					"file": "audio/dis_staylab_06_0f2ceef2.mp3",
+					"startSec": 1587.1919999999989,
+					"durSec": 4.752
+				},
+				{
+					"text": "常用七大類，預設全部勾選。",
+					"card": {
+						"kind": "step",
+						"title": "勾選項目",
+						"body": "可勾單列、整個群組，或全選"
+					},
+					"file": "audio/dis_staylab_07_a8c49952.mp3",
+					"startSec": 1592.343999999999,
+					"durSec": 3.96
+				},
+				{
+					"text": "輸血與防疫等群組，標示預設不勾。",
+					"file": "audio/dis_staylab_08_9d110d22.mp3",
+					"startSec": 1596.7039999999988,
+					"durSec": 4.776
+				},
+				{
+					"text": "不需要的項目，取消勾選即可。",
+					"file": "audio/dis_staylab_09_b90dbaa7.mp3",
+					"startSec": 1601.8799999999987,
+					"durSec": 3.888
+				},
+				{
+					"text": "也能整組取消，或按全選、全不選。",
+					"file": "audio/dis_staylab_10_12040128.mp3",
+					"startSec": 1606.1679999999988,
+					"durSec": 4.8
+				},
+				{
+					"text": "下方即時預覽等寬對齊的表格。",
+					"card": {
+						"kind": "tip",
+						"title": "日期太多時",
+						"body": "每個表格預設十欄，可調整或不切"
+					},
+					"file": "audio/dis_staylab_11_21f8f3c4.mp3",
+					"startSec": 1611.3679999999988,
+					"durSec": 4.2
+				},
+				{
+					"text": "確認後按帶入，附加到本段落。",
+					"card": {
+						"kind": "rule",
+						"title": "不覆蓋原文",
+						"body": "表格附加在段落最後，已寫的保留"
+					},
+					"file": "audio/dis_staylab_12_d4b8e4b1.mp3",
+					"startSec": 1615.9679999999987,
+					"durSec": 4.104
+				},
+				{
+					"text": "貼進病摘後，欄位依然對齊。",
+					"file": "audio/dis_staylab_13_5b693ed5.mp3",
+					"startSec": 1620.4719999999986,
+					"durSec": 4.152
+				},
+				{
+					"text": "高低值以 H、L 標示，不用箭號。",
+					"card": {
+						"kind": "tip",
+						"title": "高低值標示",
+						"body": "高值標 H、低值標 L，不用箭號"
+					},
+					"file": "audio/dis_staylab_14_024534af.mp3",
+					"startSec": 1625.0239999999985,
+					"durSec": 4.392
+				},
+				{
+					"text": "帶入後挑出有意義的趨勢，再精簡。",
+					"card": {
+						"kind": "warn",
+						"title": "你是作者",
+						"body": "帶入後挑出有意義的趨勢，精簡再存"
+					},
+					"file": "audio/dis_staylab_15_7f647962.mp3",
+					"startSec": 1629.8159999999984,
+					"durSec": 4.392
+				}
+			]
+		},
+		{
+			"id": "dis_complication",
+			"title": "合併症：併發症與副作用登錄",
+			"subtitle": "出院病摘・合併症（文字摘要）",
+			"chapter": 17,
+			"stage": "一項一項",
+			"part": "出院",
+			"startSec": 1635.4079999999983,
+			"endSec": 1734.4799999999982,
+			"sentences": [
+				{
+					"text": "最後一段是合併症，用結構化表單登錄。",
+					"file": "audio/dis_complication_00_c6c46395.mp3",
+					"startSec": 1637.8079999999984,
+					"durSec": 5.064
+				},
+				{
+					"text": "點段落頁籤的合併症，進入表單。",
+					"card": {
+						"kind": "step",
+						"title": "進入合併症",
+						"body": "點頁籤「合併症（文字摘要）」"
+					},
+					"file": "audio/dis_complication_01_bfed5503.mp3",
+					"startSec": 1643.2719999999983,
+					"durSec": 4.272
+				},
+				{
+					"text": "這段記錄住院中的併發症與治療副作用。",
+					"card": {
+						"kind": "write",
+						"title": "合併症",
+						"body": "住院中新發生的併發症與副作用：名稱、日期、分級、處置"
+					},
+					"file": "audio/dis_complication_02_64090cbb.mp3",
+					"startSec": 1647.9439999999984,
+					"durSec": 4.944
+				},
+				{
+					"text": "Clavien-Dindo 是手術併發症的分級。",
+					"card": {
+						"kind": "key",
+						"title": "兩種分級",
+						"body": "Clavien-Dindo＝手術併發症；CTCAE＝藥物副作用"
+					},
+					"file": "audio/dis_complication_03_6820622f.mp3",
+					"startSec": 1653.2879999999984,
+					"durSec": 4.08
+				},
+				{
+					"text": "CTCAE 則是藥物副作用的分級。",
+					"file": "audio/dis_complication_04_14bb3ccc.mp3",
+					"startSec": 1657.7679999999984,
+					"durSec": 3.6
+				},
+				{
+					"text": "沒有合併症就不用選，存檔時自動送 Nil。",
+					"card": {
+						"kind": "tip",
+						"title": "無合併症免勾選",
+						"body": "存檔時自動以 Nil（無併發症）送出"
+					},
+					"file": "audio/dis_complication_05_4d0dde5a.mp3",
+					"startSec": 1661.7679999999984,
+					"durSec": 5.232
+				},
+				{
+					"text": "要登錄併發症，先選新增併發症分頁。",
+					"card": {
+						"kind": "step",
+						"title": "新增併發症",
+						"body": "Clavien-Dindo 分級，依分類挑項目"
+					},
+					"file": "audio/dis_complication_06_448b9559.mp3",
+					"startSec": 1667.3999999999985,
+					"durSec": 5.04
+				},
+				{
+					"text": "從分類下拉選系統，再點項目加入。",
+					"file": "audio/dis_complication_07_fbe72e84.mp3",
+					"startSec": 1672.8399999999986,
+					"durSec": 4.656
+				},
+				{
+					"text": "清單裡沒有的，選 Others 自己說明。",
+					"file": "audio/dis_complication_08_ec854ac0.mp3",
+					"startSec": 1677.8959999999986,
+					"durSec": 4.368
+				},
+				{
+					"text": "說明上限是英文一百字、中文五十字。",
+					"card": {
+						"kind": "rule",
+						"title": "Others 必填說明",
+						"body": "中文 50 字、英文 100 字以內"
+					},
+					"file": "audio/dis_complication_09_eea5c0df.mp3",
+					"startSec": 1682.6639999999986,
+					"durSec": 5.088
+				},
+				{
+					"text": "每一項都要在右邊選 Grade。",
+					"card": {
+						"kind": "step",
+						"title": "選擇 Grade",
+						"body": "紅框代表還沒填寫"
+					},
+					"file": "audio/dis_complication_10_7729c877.mp3",
+					"startSec": 1688.1519999999987,
+					"durSec": 3.552
+				},
+				{
+					"text": "化療副作用，切到新增副作用分頁。",
+					"card": {
+						"kind": "step",
+						"title": "新增副作用",
+						"body": "CTCAE 分級，Grade 一到五"
+					},
+					"file": "audio/dis_complication_11_0b82e4b0.mp3",
+					"startSec": 1692.1039999999987,
+					"durSec": 4.776
+				},
+				{
+					"text": "下方預覽，就是儲存時寫入的段落文字。",
+					"file": "audio/dis_complication_12_ae94be81.mp3",
+					"startSec": 1697.2799999999986,
+					"durSec": 5.112
+				},
+				{
+					"text": "這裡只示範操作，請依病人實際發生的登錄。",
+					"card": {
+						"kind": "warn",
+						"title": "依實際登錄",
+						"body": "只登錄住院中真的發生的項目與分級"
+					},
+					"file": "audio/dis_complication_13_4949f722.mp3",
+					"startSec": 1702.7919999999986,
+					"durSec": 5.304
+				},
+				{
+					"text": "Grade 沒選就按正式儲存，會被擋下來。",
+					"card": {
+						"kind": "rule",
+						"title": "正式儲存前檢查",
+						"body": "每項要選 Grade，Others 要填說明"
+					},
+					"file": "audio/dis_complication_14_d83dc0c0.mp3",
+					"startSec": 1708.4959999999985,
+					"durSec": 4.872
+				},
+				{
+					"text": "畫面自動跳回合併症，用紅框標出缺漏。",
+					"file": "audio/dis_complication_15_25e91493.mp3",
+					"startSec": 1713.7679999999984,
+					"durSec": 5.256
+				},
+				{
+					"text": "補選 Grade 之後，就能正常儲存。",
+					"file": "audio/dis_complication_16_d929a67a.mp3",
+					"startSec": 1719.4239999999984,
+					"durSec": 4.104
+				},
+				{
+					"text": "暫存不做檢查，可以先存再慢慢補。",
+					"card": {
+						"kind": "rule",
+						"title": "暫存不檢查",
+						"body": "只有正式儲存才檢查合併症表單"
+					},
+					"file": "audio/dis_complication_17_907be737.mp3",
+					"startSec": 1723.9279999999983,
+					"durSec": 4.536
+				},
+				{
+					"text": "移除的副作用存檔後就不會再出現。",
+					"card": {
+						"kind": "design",
+						"title": "版本化儲存",
+						"body": "整份清單一起存，移除的項目不會再出現"
+					},
+					"file": "audio/dis_complication_18_44012082.mp3",
+					"startSec": 1728.8639999999982,
+					"durSec": 4.416
+				}
+			]
+		},
+		{
+			"id": "templates",
+			"title": "病摘範本",
+			"subtitle": "帶入・儲存・管理・搜尋",
+			"chapter": 18,
+			"stage": "CRUD",
+			"part": "出院",
+			"startSec": 1734.4799999999982,
+			"endSec": 1806.6399999999983,
+			"sentences": [
+				{
+					"text": "範本建議在開始寫病摘之前就套用。",
+					"file": "audio/templates_00_d6c3a2f6.mp3",
+					"startSec": 1736.8799999999983,
+					"durSec": 4.8
+				},
+				{
+					"text": "範本按鈕在入院出院切換列的右側。",
+					"file": "audio/templates_01_d28a5bdb.mp3",
+					"startSec": 1742.0799999999983,
+					"durSec": 4.56
+				},
+				{
+					"text": "點帶入出院範本，左邊選一個範本。",
+					"card": {
+						"kind": "step",
+						"title": "帶入範本",
+						"body": "左側選範本、右側預覽內容"
+					},
+					"file": "audio/templates_02_66821eae.mp3",
+					"startSec": 1747.0399999999984,
+					"durSec": 4.392
+				},
+				{
+					"text": "右邊會預覽要帶入的每個段落。",
+					"file": "audio/templates_03_f839b5c8.mp3",
+					"startSec": 1751.8319999999983,
+					"durSec": 3.888
+				},
+				{
+					"text": "選附加，不要選覆蓋，再按帶入範本。",
+					"card": {
+						"kind": "tip",
+						"title": "一開始就套用",
+						"body": "開始寫之前套用；用附加，不要覆蓋"
+					},
+					"file": "audio/templates_04_8a5713d0.mp3",
+					"startSec": 1756.1199999999983,
+					"durSec": 4.776
+				},
+				{
+					"text": "寫好的病摘，也能存成新範本。",
+					"card": {
+						"kind": "step",
+						"title": "儲存範本",
+						"body": "輸入檔名、勾選要存的段落"
+					},
+					"file": "audio/templates_05_98cb0e79.mp3",
+					"startSec": 1761.2959999999982,
+					"durSec": 3.984
+				},
+				{
+					"text": "輸入範本檔名，預設勾選有內容的段落。",
+					"file": "audio/templates_06_4d043825.mp3",
+					"startSec": 1765.6799999999982,
+					"durSec": 5.016
+				},
+				{
+					"text": "管理範本，可以覆寫或刪除舊範本。",
+					"card": {
+						"kind": "step",
+						"title": "管理範本",
+						"body": "以目前內容覆寫，或刪除"
+					},
+					"file": "audio/templates_07_7b1c2f5a.mp3",
+					"startSec": 1771.0959999999982,
+					"durSec": 4.56
+				},
+				{
+					"text": "刪除前會再確認一次，避免誤刪。",
+					"file": "audio/templates_08_ea1af5ee.mp3",
+					"startSec": 1776.0559999999982,
+					"durSec": 4.536
+				},
+				{
+					"text": "範本搜尋，可以找同事的範本。",
+					"card": {
+						"kind": "step",
+						"title": "範本搜尋",
+						"body": "輸入同事姓名或員工編號查詢"
+					},
+					"file": "audio/templates_09_a03c539c.mp3",
+					"startSec": 1780.9919999999981,
+					"durSec": 3.936
+				},
+				{
+					"text": "輸入同事姓名，選出院範本後查詢。",
+					"file": "audio/templates_10_fd2dd50a.mp3",
+					"startSec": 1785.3279999999982,
+					"durSec": 4.944
+				},
+				{
+					"text": "選好範本，取個檔名加入我的範本。",
+					"file": "audio/templates_11_81704adc.mp3",
+					"startSec": 1790.6719999999982,
+					"durSec": 4.368
+				},
+				{
+					"text": "已簽，或待簽而你不是主治時，不能帶入。",
+					"card": {
+						"kind": "rule",
+						"title": "停用時機",
+						"body": "已簽，或待簽且你不是主治時，停用"
+					},
+					"file": "audio/templates_12_98d8fe5d.mp3",
+					"startSec": 1795.4399999999982,
+					"durSec": 5.328
+				},
+				{
+					"text": "範本是個人的，同事的要自己加入。",
+					"card": {
+						"kind": "design",
+						"title": "個人範本",
+						"body": "加入後成為自己的副本，可再修改"
+					},
+					"file": "audio/templates_13_af70d9f0.mp3",
+					"startSec": 1801.1679999999983,
+					"durSec": 4.272
+				}
+			]
+		},
+		{
+			"id": "preview_sign",
+			"title": "預覽、暫存與送簽",
+			"subtitle": "存檔・簽核・簽後補充",
+			"chapter": 19,
+			"stage": "CRUD",
+			"part": "共通",
+			"startSec": 1806.6399999999983,
+			"endSec": 1893.8159999999987,
+			"sentences": [
+				{
+					"text": "最後一步是存檔：先預覽，再儲存送簽。",
+					"file": "audio/preview_sign_00_858f9fe1.mp3",
+					"startSec": 1809.0399999999984,
+					"durSec": 5.256
+				},
+				{
+					"text": "按底部的預覽，檢查整份病摘。",
+					"card": {
+						"kind": "step",
+						"title": "預覽",
+						"body": "底部操作列「預覽」，已簽也能用"
+					},
+					"file": "audio/preview_sign_01_42adb624.mp3",
+					"startSec": 1814.6959999999983,
+					"durSec": 4.032
+				},
+				{
+					"text": "格式同舊系統，每段以 @ 加段落標題開頭。",
+					"file": "audio/preview_sign_02_be92e288.mp3",
+					"startSec": 1819.1279999999983,
+					"durSec": 5.4
+				},
+				{
+					"text": "暫存、送簽、簽核規則同入院病摘。",
+					"card": {
+						"kind": "rule",
+						"title": "規則同入院",
+						"body": "暫存＝草稿；送簽後待簽；主治簽核＝已簽"
+					},
+					"file": "audio/preview_sign_03_f5956ed9.mp3",
+					"startSec": 1824.9279999999983,
+					"durSec": 5.04
+				},
+				{
+					"text": "縮寫對照不用自己寫，存檔時自動產生。",
+					"card": {
+						"kind": "write",
+						"title": "縮寫對照",
+						"body": "入院、出院都在存檔時自動產生"
+					},
+					"file": "audio/preview_sign_04_75b8fb15.mp3",
+					"startSec": 1830.3679999999983,
+					"durSec": 5.232
+				},
+				{
+					"text": "存檔前，系統會檢查別人是否剛存過。",
+					"card": {
+						"kind": "rule",
+						"title": "防止互相覆蓋",
+						"body": "後存的人會蓋掉整份病摘"
+					},
+					"file": "audio/preview_sign_05_9520ae45.mp3",
+					"startSec": 1835.9999999999984,
+					"durSec": 5.328
+				},
+				{
+					"text": "跳出提醒時，載入最新內容會放棄你的修改。",
+					"file": "audio/preview_sign_06_7c44dd4d.mp3",
+					"startSec": 1841.7279999999985,
+					"durSec": 5.52
+				},
+				{
+					"text": "要保留的先複製起來，這裡先按先不要儲存。",
+					"file": "audio/preview_sign_07_33061426.mp3",
+					"startSec": 1847.6479999999985,
+					"durSec": 5.64
+				},
+				{
+					"text": "寫完就按正式儲存送簽，等主治簽核。",
+					"card": {
+						"kind": "step",
+						"title": "正式儲存/送簽",
+						"body": "寫入正式內容，送主治醫師簽核"
+					},
+					"file": "audio/preview_sign_08_fac5be75.mp3",
+					"startSec": 1853.6879999999985,
+					"durSec": 5.376
+				},
+				{
+					"text": "這裡直接看主治簽核後的已簽畫面。",
+					"file": "audio/preview_sign_09_36da9de3.mp3",
+					"startSec": 1859.4639999999986,
+					"durSec": 4.464
+				},
+				{
+					"text": "已簽後原文唯讀，暫存與正式儲存會隱藏。",
+					"card": {
+						"kind": "rule",
+						"title": "已簽唯讀",
+						"body": "表單鈕變灰、部分帶入鈕隱藏；底部存檔鈕隱藏"
+					},
+					"file": "audio/preview_sign_10_2aaecf08.mp3",
+					"startSec": 1864.3279999999986,
+					"durSec": 5.64
+				},
+				{
+					"text": "主治要追加內容，就在下方寫簽後補充。",
+					"card": {
+						"kind": "step",
+						"title": "簽後補充",
+						"body": "上方唯讀原文，下方新增補充"
+					},
+					"file": "audio/preview_sign_11_bc662f0b.mp3",
+					"startSec": 1870.3679999999986,
+					"durSec": 5.136
+				},
+				{
+					"text": "例如補上出院後才回報的血液培養結果。",
+					"file": "audio/preview_sign_12_8b74e1b3.mp3",
+					"startSec": 1875.9039999999986,
+					"durSec": 5.064
+				},
+				{
+					"text": "按儲存補充送簽，補充會接在原文後面。",
+					"card": {
+						"kind": "rule",
+						"title": "限主治醫師",
+						"body": "非主治看不到補充區與這顆按鈕"
+					},
+					"file": "audio/preview_sign_13_b7b5bcbf.mp3",
+					"startSec": 1881.3679999999986,
+					"durSec": 5.184
+				},
+				{
+					"text": "從帶入、補寫、預覽到送簽，病摘就完成了。",
+					"file": "audio/preview_sign_14_c1c4265d.mp3",
+					"startSec": 1886.9519999999986,
+					"durSec": 5.664
+				}
+			]
+		},
+		{
+			"id": "outro",
+			"title": "回顧",
+			"subtitle": "",
+			"chapter": null,
+			"stage": null,
+			"part": null,
+			"startSec": 1893.8159999999987,
+			"endSec": 1931.9039999999982,
+			"sentences": [
+				{
+					"text": "最後回顧一次寫病摘的順序。",
+					"file": "audio/outro_00_bbde8dae.mp3",
+					"startSec": 1894.6159999999986,
+					"durSec": 3.912
+				},
+				{
+					"text": "先選病人，再選這次住院事件。",
+					"file": "audio/outro_01_6258ba2d.mp3",
+					"startSec": 1898.9279999999985,
+					"durSec": 4.392
+				},
+				{
+					"text": "看資料，再用一鍵草稿帶入。",
+					"file": "audio/outro_02_4a58e586.mp3",
+					"startSec": 1903.7199999999984,
+					"durSec": 3.864
+				},
+				{
+					"text": "修改草稿，一項一項完成每個段落。",
+					"file": "audio/outro_03_66618cfa.mp3",
+					"startSec": 1907.9839999999983,
+					"durSec": 4.44
+				},
+				{
+					"text": "最後暫存、預覽，正式儲存送簽。",
+					"file": "audio/outro_04_84854ffc.mp3",
+					"startSec": 1912.8239999999983,
+					"durSec": 4.656
+				},
+				{
+					"text": "自動帶入只填空白段落，出院狀態與帶藥務必核對。",
+					"file": "audio/outro_05_322fe3df.mp3",
+					"startSec": 1917.8799999999983,
+					"durSec": 6.408
+				},
+				{
+					"text": "謝謝收看，祝你臨床順利。",
+					"file": "audio/outro_06_0be156b0.mp3",
+					"startSec": 1924.6879999999983,
+					"durSec": 3.816
+				}
+			]
+		}
+	],
+	"chapterCount": 19,
+	"stages": [
+		"選人",
+		"事項",
+		"看資料",
+		"帶入",
+		"修改",
+		"一項一項",
+		"CRUD"
+	],
+	"totalSec": 1931.9039999999982,
+	"totalFrames": 57958
+}

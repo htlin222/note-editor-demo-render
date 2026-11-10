@@ -1,0 +1,121 @@
+# 平行分段渲染：畫面切成 N 段（各自 --muted），音軌另外依時間軸直接混，最後 concat + mux。
+# 素材（錄影 webm、旁白 mp3、sfx.wav）放在 release「assets」的 demo-assets.tar.zst，不進 git。
+name: render
+
+on:
+  workflow_dispatch:
+    inputs:
+      chunks:
+        description: "分幾段平行渲染（免費方案同時最多 20 個 job）"
+        default: "20"
+      assets_tag:
+        description: "素材所在的 release tag"
+        default: "assets"
+
+permissions:
+  contents: write
+
+env:
+  COMPOSITION: DischargeSummaryDemo
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: plan
+        run: |
+          node -e '
+            const tl = require("./narration/timeline.json");
+            const total = tl.totalFrames, n = Math.max(1, parseInt(process.env.N, 10));
+            const size = Math.ceil(total / n), out = [];
+            for (let i = 0, from = 0; from < total; i++, from += size)
+              out.push({ i: String(i).padStart(2, "0"), from, to: Math.min(total - 1, from + size - 1) });
+            console.log(`total=${total} chunks=${out.length}`);
+            require("fs").appendFileSync(process.env.GITHUB_OUTPUT, `matrix=${JSON.stringify({ include: out })}\n`);
+          '
+        env:
+          N: ${{ inputs.chunks }}
+
+  render:
+    needs: plan
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix: ${{ fromJson(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - name: 中文字型
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-cjk fonts-dejavu-core zstd > /dev/null
+      - run: pnpm install --frozen-lockfile
+      - name: 下載素材
+        run: gh release download "${{ inputs.assets_tag }}" -p demo-assets.tar.zst -O - | zstd -d | tar -C public -xf -
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - run: npx remotion browser ensure
+      - name: 渲染 frames ${{ matrix.from }}-${{ matrix.to }}
+        run: |
+          npx remotion render "$COMPOSITION" "out/part_${{ matrix.i }}.mp4" \
+            --codec h264 --muted --concurrency "$(nproc)" --timeout 120000 \
+            --frames="${{ matrix.from }}-${{ matrix.to }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: part_${{ matrix.i }}
+          path: out/part_${{ matrix.i }}.mp4
+          retention-days: 3
+          compression-level: 0
+
+  audio:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg zstd > /dev/null
+      - name: 下載素材
+        run: gh release download "${{ inputs.assets_tag }}" -p demo-assets.tar.zst -O - | zstd -d | tar -C public -xf -
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - run: pip install -q numpy && python3 scripts/mix-audio.py out/full_audio.wav
+      - uses: actions/upload-artifact@v4
+        with:
+          name: audio
+          path: out/full_audio.wav
+          retention-days: 3
+
+  assemble:
+    needs: [render, audio]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+      - uses: actions/download-artifact@v4
+        with:
+          path: dl
+          merge-multiple: true
+      - name: 接合並配上音軌
+        run: |
+          mkdir -p out
+          ls dl/part_*.mp4 | sort | sed "s|^|file '$PWD/|; s|$|'|" > out/list.txt
+          ffmpeg -nostdin -v error -f concat -safe 0 -i out/list.txt -i dl/full_audio.wav \
+            -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -shortest -movflags +faststart \
+            out/discharge-summary-demo.mp4
+          frames=$(ffprobe -v error -count_packets -select_streams v -show_entries stream=nb_read_packets -of csv=p=0 out/discharge-summary-demo.mp4)
+          want=$(node -p 'require("./narration/timeline.json").totalFrames')
+          echo "frames=$frames want=$want"
+          test "$frames" = "$want"
+          ffprobe -v error -show_entries format=duration,size -of compact out/discharge-summary-demo.mp4
+      - name: 發布到 release
+        run: |
+          tag="render-${{ github.run_number }}"
+          gh release create "$tag" out/discharge-summary-demo.mp4 discharge-summary-demo.srt \
+            --title "渲染 #${{ github.run_number }}" --notes "commit ${{ github.sha }}，${{ inputs.chunks }} 段平行渲染"
+        env:
+          GH_TOKEN: ${{ github.token }}
