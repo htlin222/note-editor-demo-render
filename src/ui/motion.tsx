@@ -38,7 +38,7 @@ export const Spotlight: React.FC<{ s: CamState }> = ({ s }) => {
 				boxShadow: [
 					`0 0 0 3px rgba(96,165,250,${0.95 * s.dim})`,
 					`0 0 28px 6px rgba(59,130,246,${0.45 * s.dim * breathe})`,
-					`0 0 0 4000px rgba(5,10,22,${0.68 * s.dim})`,
+					`0 0 0 4000px rgba(5,10,22,${0.42 * s.dim})`,
 				].join(", "),
 			}}
 		>

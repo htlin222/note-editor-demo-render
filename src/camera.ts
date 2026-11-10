@@ -12,6 +12,11 @@ import type { SceneTiming } from "./timing";
 export const W = 1920;
 export const H = 1080;
 const SUB_ZONE = 150; // 底部字幕區，焦點不要放進去
+/* 平穩鏡頭（v2.2）：倍率上限低、焦點已在畫面內就不動鏡頭只移聚光框、字卡開關不重新取景、推移放慢 */
+const MAX_Z = 1.35;
+const MIN_MOVE = 1.3; // 鏡頭推移最短秒數
+const SPOT_MOVE = 0.6; // 只移聚光框的秒數
+const SMALL_AREA = 0.02; // 全景時，焦點框面積小於畫面 2%（小按鈕、單行）才推近
 
 type Box = { x: number; y: number; w: number; h: number };
 type CamEvent = { t: number; box: Box | null; zoom: number; pad: number; dim: boolean; move: number };
@@ -33,7 +38,7 @@ const target = (ev: { box: Box | null; zoom: number; pad: number; dim: boolean }
 	const availH = H - SUB_ZONE - 40;
 	const bw = b.w + ev.pad * 2;
 	const bh = b.h + ev.pad * 2;
-	const z = clamp(Math.min(ev.zoom, (availW * 0.86) / bw, (availH * 0.86) / bh), 1, 4);
+	const z = clamp(Math.min(ev.zoom, (availW * 0.86) / bw, (availH * 0.86) / bh), 1, MAX_Z);
 	const cx = b.x + b.w / 2;
 	const cy = b.y + b.h / 2;
 	// 讓框中心落在可視區中心（字卡左側 / 字幕上方）
@@ -43,6 +48,14 @@ const target = (ev: { box: Box | null; zoom: number; pad: number; dim: boolean }
 	const top = clamp(cy - screenCy / z, 0, H - H / z);
 	const g = 10; // 聚光框比元素大一點
 	return { left, top, z, fx: b.x - g, fy: b.y - g, fw: b.w + g * 2, fh: b.h + g * 2, dim: ev.dim ? 1 : 0 };
+};
+
+/** 框在鏡頭 s 下是否完整落在可視區（字卡左側、字幕上方） */
+const visible = (s: CamState, b: Box, cardOn: boolean) => {
+	const availW = cardOn ? W - CARD_ZONE_W : W;
+	const x0 = (b.x - s.left) * s.z, y0 = (b.y - s.top) * s.z;
+	const x1 = (b.x + b.w - s.left) * s.z, y1 = (b.y + b.h - s.top) * s.z;
+	return x0 >= 0 && y0 >= 30 && x1 <= availW && y1 <= H - SUB_ZONE;
 };
 
 /* ---- PCHIP ---- */
@@ -91,9 +104,10 @@ export const cameraFor = (t: SceneTiming, fps: number): ((sec: number) => CamSta
 	// 時間點：cam 事件 + 字卡開關（重新取景）
 	type Step = { t: number; ev: CamEvent | null; move: number };
 	const steps: Step[] = evs.map((e) => ({ t: Math.max(0, e.t), ev: e, move: e.move ?? 0.9 }));
+	// 字卡開關：只有焦點會被字卡蓋住時才重新取景（下方 visible 判斷，看得到就略過）
 	for (const c of cards) {
-		steps.push({ t: c.start, ev: null, move: 0.7 });
-		steps.push({ t: c.end, ev: null, move: 0.7 });
+		steps.push({ t: c.start, ev: null, move: MIN_MOVE });
+		steps.push({ t: c.end, ev: null, move: MIN_MOVE });
 	}
 	steps.sort((a, b) => a.t - b.t);
 
@@ -104,7 +118,21 @@ export const cameraFor = (t: SceneTiming, fps: number): ((sec: number) => CamSta
 	keys.push({ t: 0, s: last });
 	for (const st of steps) {
 		if (st.ev) cur = st.ev;
-		const next = target(cur, cardOnAt(st.t + 0.01));
+		const cardOn = cardOnAt(st.t + 0.01);
+		let next = target(cur, cardOn);
+		let move = Math.max(st.move, MIN_MOVE);
+		// 焦點框已在目前畫面可視區內、倍率差不多 → 鏡頭不動，只移聚光框
+		if (cur.box && last.z > 1.001 && visible(last, cur.box, cardOn)) {
+			next = { ...next, left: last.left, top: last.top, z: last.z };
+			move = SPOT_MOVE;
+		} else if (cur.box && last.z <= 1.001 && visible(last, cur.box, cardOn) && (cur.box.w * cur.box.h) / (W * H) > SMALL_AREA) {
+			// 全景時焦點夠大、看得清楚 → 不推鏡頭
+			next = { ...next, left: 0, top: 0, z: 1 };
+			move = SPOT_MOVE;
+		} else if (cur.box && last.z > 1.001 && (cur.box.w * cur.box.h) / (W * H) > SMALL_AREA && visible(FULL, cur.box, cardOn)) {
+			// 推近中、新焦點不在畫面內但夠大 → 拉回全景，不追著平移
+			next = { ...next, left: 0, top: 0, z: 1 };
+		}
 		if (JSON.stringify(next) === JSON.stringify(last)) continue;
 		const prevT = keys[keys.length - 1].t;
 		if (st.t <= 0.05) {
@@ -115,7 +143,7 @@ export const cameraFor = (t: SceneTiming, fps: number): ((sec: number) => CamSta
 		}
 		const start = Math.max(st.t, prevT + 0.05);
 		keys.push({ t: start, s: last });
-		keys.push({ t: start + st.move, s: next });
+		keys.push({ t: start + move, s: next });
 		last = next;
 	}
 	// 同一時間點重複的 key 合併（避免 h=0）
